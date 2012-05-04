@@ -1,0 +1,11 @@
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part1_tileset.xnb
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\IsometricGame.exe
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\IsometricGame.pdb
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\IsometricGame.exe
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\IsometricGame.pdb
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part2_tileset.xnb
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part3_tileset.xnb
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part4_tileset.xnb
+c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\Pericles6.xnb
