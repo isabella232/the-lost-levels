@@ -1,1 +1,2 @@
 c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGameContent\obj\x86\Debug\ResolveAssemblyReference.cache

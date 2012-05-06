@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part1_tileset.xnb</Output>
-      <Time>2012-05-03T14:49:06.0855514-05:00</Time>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part1_tileset.xnb</Output>
+      <Time>2012-05-03T20:49:54.8994514-05:00</Time>
     </Item>
     <Item>
       <Source>part2_tileset.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part2_tileset.xnb</Output>
-      <Time>2012-05-03T19:10:20.8447551-05:00</Time>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part2_tileset.xnb</Output>
+      <Time>2012-05-03T20:49:54.9284531-05:00</Time>
     </Item>
     <Item>
       <Source>part3_tileset.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part3_tileset.xnb</Output>
-      <Time>2012-05-03T19:29:55.4239372-05:00</Time>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part3_tileset.xnb</Output>
+      <Time>2012-05-03T20:49:54.9664553-05:00</Time>
     </Item>
     <Item>
       <Source>part4_tileset.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part4_tileset.xnb</Output>
-      <Time>2012-05-03T19:27:36.3729839-05:00</Time>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part4_tileset.xnb</Output>
+      <Time>2012-05-03T20:49:54.9774559-05:00</Time>
     </Item>
     <Item>
       <Source>Pericles6.spritefont</Source>
@@ -43,8 +43,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\Pericles6.xnb</Output>
-      <Time>2011-01-14T20:33:20-06:00</Time>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\Pericles6.xnb</Output>
+      <Time>2012-05-03T20:49:55.1784674-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -53,10 +53,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGameContent\</RootDirectory>
-      <LoggerRootDirectory>c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\</LoggerRootDirectory>
-      <IntermediateDirectory>c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>c:\users\karthic\documents\visual studio 2010\Projects\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
