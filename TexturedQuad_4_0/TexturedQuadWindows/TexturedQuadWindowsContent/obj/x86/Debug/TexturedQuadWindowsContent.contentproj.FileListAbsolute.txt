@@ -1,0 +1,2 @@
+C:\Users\Karthic\Downloads\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindowsContent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\EECS 395 Game Engine Design\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindowsContent\obj\x86\Debug\ResolveAssemblyReference.cache
