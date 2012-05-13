@@ -9,55 +9,67 @@ using Microsoft.Xna.Framework.Input;
 
 namespace TexturedQuadWindows
 {
+    /*Works purely on keyboard input
+     * Plan is to change this for mouse control but keyboard for now
+     * */
     class Camera
     {
-        
-        private float yaw, pitch, roll;
-        private float speed;
-        private Matrix cameraRotation;
-        private Vector3 Position,Target;
-        public Matrix ViewMatrix;
 
+        //my code
+        public Vector3 center;
+        public float radius;
+        public float theta;
+        public float phi;
+        public float speed;
+        private Vector3 Position, Target;
+        public Matrix ViewMatrix;
+        public Matrix Projection;
+
+
+        //Camera is simulated as a spherical co-ordinate system looking at  a center 
+        //(which is called target). You can modify the phi and theta value using keyboard (check keyboard input)
+        
         public Camera()
         {
             ResetCamera();
+
         }
 
-        public void ResetCamera()
+        
+        Vector3 toSpherical(float r, float phi, float theta)
+        //given spherical coordinates in radians find the point on x,y,z axes
         {
-            yaw = 0.0f;
-            pitch = 0.0f;
-            roll = 0.0f;
+            return new Vector3((float)(r * Math.Cos(phi) * Math.Cos(theta))
+                , (float)(r * Math.Sin(theta))
+                , (float)(r * Math.Sin(phi) * Math.Cos(theta)));
+        }
 
-            speed = .3f;
 
-            cameraRotation = Matrix.Identity;
-            Position = new Vector3(-10, 10, 10);
-            Target = Vector3.Zero;
-            cameraRotation.Up = Vector3.Up;
-            ViewMatrix = Matrix.CreateLookAt(new Vector3(-10, 10, 10), Vector3.Zero, Vector3.Up);
 
+        public void ResetCamera()
+        //Reset Camera Settings to inital position
+        {
+            //my code
+            center = new Vector3(5, 0, 5);
+            radius = 15;
+            phi = MathHelper.ToRadians(120);
+            theta = MathHelper.ToRadians(70);
+
+
+            Target = center;
+            ViewMatrix = Matrix.CreateLookAt(center + toSpherical(radius, phi, theta), Target, Vector3.Up);
+            Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver2, (float)3 / 4, 1, 500);
+
+            speed = 0.3f;
         }
 
 
         public void UpdateViewMatrix()
+        //This view matrix is updated after getting an input from keyboard. 
+        //Position is added as the sum of target
         {
-
-            cameraRotation.Forward.Normalize();
-            cameraRotation.Up.Normalize();
-            cameraRotation.Right.Normalize();
-
-            cameraRotation *= Matrix.CreateFromAxisAngle(cameraRotation.Right, pitch);
-            cameraRotation *= Matrix.CreateFromAxisAngle(cameraRotation.Up, yaw);
-            cameraRotation *= Matrix.CreateFromAxisAngle(cameraRotation.Forward, roll);
-
-            yaw = 0.0f;
-            pitch = 0.0f;
-            roll = 0.0f;
-
-            Target = Position + cameraRotation.Forward;
-
-            ViewMatrix = Matrix.CreateLookAt(Position, Target, cameraRotation.Up);
+            Position = Target + toSpherical(radius, phi, theta);
+            ViewMatrix = Matrix.CreateLookAt(Position, Target, Vector3.Up);
         }
 
         public void Update()
@@ -67,62 +79,62 @@ namespace TexturedQuadWindows
         }
 
         private void HandleInput()
+            /**
+             * J and L changes the phi value.
+             * I and K changes theta value.
+             * Up and down changes the zoom (changes the radius)
+             * W,S,A,D to move the camera forward,backward,right and left respectively
+             * R resets the camera
+           **/
         {
             KeyboardState keyboardState = Keyboard.GetState();
 
-            if (keyboardState.IsKeyDown(Keys.J))
-            {
-                yaw += .02f;
-            }
-            if (keyboardState.IsKeyDown(Keys.L))
-            {
-                yaw += -.02f;
-            }
-            if (keyboardState.IsKeyDown(Keys.I))
-            {
-                pitch += -.02f;
-            }
-            if (keyboardState.IsKeyDown(Keys.K))
-            {
-                pitch += .02f;
-            }
+            if(keyboardState.IsKeyDown(Keys.J))
+            {phi-=0.02f;}
+
+            if(keyboardState.IsKeyDown(Keys.L))
+            {phi +=0.02f;}
+
+            if(keyboardState.IsKeyDown(Keys.I))
+            {theta -=0.02f;}
+            
+            if(keyboardState.IsKeyDown(Keys.K))
+            {theta +=0.02f;}
+
+            if(keyboardState.IsKeyDown(Keys.Up))
+            {radius -=0.07f;}
+
+            if(keyboardState.IsKeyDown(Keys.Down))
+            {radius +=0.07f;}
             
             if (keyboardState.IsKeyDown(Keys.W))
             {
-                MoveCamera(cameraRotation.Forward);
+                MoveCamera(ViewMatrix.Forward);
             }
             if (keyboardState.IsKeyDown(Keys.S))
             {
-                MoveCamera(-cameraRotation.Forward);
+                MoveCamera(-ViewMatrix.Forward);
             }
             if (keyboardState.IsKeyDown(Keys.A))
             {
-                MoveCamera(-cameraRotation.Right);
+                MoveCamera(-ViewMatrix.Right);
             }
             if (keyboardState.IsKeyDown(Keys.D))
             {
-                MoveCamera(cameraRotation.Right);
+                MoveCamera(ViewMatrix.Right);
             }
-            if (keyboardState.IsKeyDown(Keys.E))
-            {
-                MoveCamera(cameraRotation.Up);
-            }
-            if (keyboardState.IsKeyDown(Keys.Q))
-            {
-                MoveCamera(-cameraRotation.Up);
-            }
-            if(keyboardState.IsKeyDown(Keys.R))
+                        
+            if (keyboardState.IsKeyDown(Keys.R))
             {
                 ResetCamera();
             }
         }
 
+        //Changes the camera for forward, backward, sideways movement.
         private void MoveCamera(Vector3 addedVector)
         {
-            Position += speed * addedVector;
+            Position += speed * (addedVector * (new Vector3(0.414f, 0, 0.414f)));
+            Target += speed * (addedVector * (new Vector3(0.414f, 0, 0.414f)));
         }
-
-
-            
     }
 }
