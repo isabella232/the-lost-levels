@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part1_tileset.xnb</Output>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part1_tileset.xnb</Output>
       <Time>2010-11-25T07:36:00-06:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part2_tileset.xnb</Output>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part2_tileset.xnb</Output>
       <Time>2010-12-05T09:36:54-06:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part3_tileset.xnb</Output>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part3_tileset.xnb</Output>
       <Time>2010-12-13T18:53:46-06:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part4_tileset.xnb</Output>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part4_tileset.xnb</Output>
       <Time>2011-01-14T21:22:52-06:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\hilight.xnb</Output>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\hilight.xnb</Output>
       <Time>2011-06-07T21:42:46-05:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\mousemap.xnb</Output>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\mousemap.xnb</Output>
       <Time>2011-06-07T21:35:08-05:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\Characters\T_Vlad_Sword_Walking_48x48.xnb</Output>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\Characters\T_Vlad_Sword_Walking_48x48.xnb</Output>
       <Time>2011-06-08T13:12:20-05:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part9_slopemaps.xnb</Output>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Textures\TileSets\part9_slopemaps.xnb</Output>
       <Time>2011-06-14T19:56:32-05:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Fonts\Pericles6.xnb</Output>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\Fonts\Pericles6.xnb</Output>
       <Time>2011-01-14T21:33:20-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -89,10 +89,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngineContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Karthic\Downloads\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngineContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\tileengineseries9\TileEngine\TileEngine\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

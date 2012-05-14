@@ -24,7 +24,7 @@ namespace TexturedQuadWindows
         private Vector3 Position, Target;
         public Matrix ViewMatrix;
         public Matrix Projection;
-
+        private int scrollValue;
 
         //Camera is simulated as a spherical co-ordinate system looking at  a center 
         //(which is called target). You can modify the phi and theta value using keyboard (check keyboard input)
@@ -32,7 +32,7 @@ namespace TexturedQuadWindows
         public Camera()
         {
             ResetCamera();
-
+            scrollValue = Mouse.GetState().ScrollWheelValue;
         }
 
         
@@ -51,6 +51,7 @@ namespace TexturedQuadWindows
         {
             //my code
             center = new Vector3(5, 0, 5);
+            //center = new Vector3(0, 0, 0);
             radius = 15;
             phi = MathHelper.ToRadians(120);
             theta = MathHelper.ToRadians(70);
@@ -58,6 +59,7 @@ namespace TexturedQuadWindows
 
             Target = center;
             ViewMatrix = Matrix.CreateLookAt(center + toSpherical(radius, phi, theta), Target, Vector3.Up);
+            //ViewMatrix = Matrix.CreateLookAt(new Vector3(0, 2, 0), new Vector3(1, 0, 1), Vector3.Up);
             Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver2, (float)3 / 4, 1, 500);
 
             speed = 0.3f;
@@ -69,6 +71,7 @@ namespace TexturedQuadWindows
         //Position is added as the sum of target
         {
             Position = Target + toSpherical(radius, phi, theta);
+            Target   = clampVector(Target,0);
             ViewMatrix = Matrix.CreateLookAt(Position, Target, Vector3.Up);
         }
 
@@ -88,25 +91,30 @@ namespace TexturedQuadWindows
            **/
         {
             KeyboardState keyboardState = Keyboard.GetState();
-
+            MouseState mouseState = Mouse.GetState();
+            
             if(keyboardState.IsKeyDown(Keys.J))
             {phi-=0.02f;}
 
-            if(keyboardState.IsKeyDown(Keys.L))
+            if(mouseState.MiddleButton==ButtonState.Pressed)
             {phi +=0.02f;}
 
-            if(keyboardState.IsKeyDown(Keys.I))
-            {theta -=0.02f;}
-            
-            if(keyboardState.IsKeyDown(Keys.K))
-            {theta +=0.02f;}
+            //if(keyboardState.IsKeyDown(Keys.Up))
+            //{radius -=0.07f;}
 
-            if(keyboardState.IsKeyDown(Keys.Up))
-            {radius -=0.07f;}
+            //if(keyboardState.IsKeyDown(Keys.Down))
+            //{radius +=0.07f;}
 
-            if(keyboardState.IsKeyDown(Keys.Down))
-            {radius +=0.07f;}
-            
+            if ((scrollValue- mouseState.ScrollWheelValue) < 0)
+            { 
+                radius -= 0.3f; 
+                scrollValue = mouseState.ScrollWheelValue;
+            }
+            if ((scrollValue - mouseState.ScrollWheelValue) > 0)
+            {
+                radius += 0.3f;
+                scrollValue = mouseState.ScrollWheelValue;
+            }
             if (keyboardState.IsKeyDown(Keys.W))
             {
                 MoveCamera(ViewMatrix.Forward);
@@ -135,6 +143,18 @@ namespace TexturedQuadWindows
         {
             Position += speed * (addedVector * (new Vector3(0.414f, 0, 0.414f)));
             Target += speed * (addedVector * (new Vector3(0.414f, 0, 0.414f)));
+        }
+        float myClamp(float value, float min)
+        {
+            if (value <= min)
+                return min;
+            else
+                return value;
+        }
+
+        Vector3 clampVector(Vector3 v, float min)
+        {
+            return new Vector3(myClamp(v.X, 0), myClamp(v.Y, 0), myClamp(v.Z, 0));
         }
     }
 }
