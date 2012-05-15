@@ -47,7 +47,7 @@ namespace TestModel
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            Cube = Content.Load<Model>("Cube");
+            Cube = Content.Load<Model>("guy");
             aspectRatio = graphics.GraphicsDevice.Viewport.AspectRatio;
             // TODO: use this.Content to load your game content here
         }
