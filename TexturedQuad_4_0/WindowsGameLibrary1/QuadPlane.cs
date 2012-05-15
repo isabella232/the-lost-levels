@@ -20,7 +20,7 @@ namespace RPGLibrary
         Quad[,] quad;
         int span = 100;
         Game whichGame;
-
+        BoundingBox box;
 
         public QuadPlane(Game game,int height, int width) :base(game)
         {

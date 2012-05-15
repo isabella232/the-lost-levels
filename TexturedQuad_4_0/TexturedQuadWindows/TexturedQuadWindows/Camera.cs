@@ -94,7 +94,9 @@ namespace TexturedQuadWindows
             MouseState mouseState = Mouse.GetState();
             
             if(keyboardState.IsKeyDown(Keys.J))
-            {phi-=0.02f;}
+            {theta-=0.02f;}
+            if (keyboardState.IsKeyDown(Keys.K))
+            { theta += 0.02f; }
 
             if(mouseState.MiddleButton==ButtonState.Pressed)
             {phi +=0.02f;}

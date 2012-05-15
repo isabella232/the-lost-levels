@@ -22,7 +22,7 @@ namespace RPGLibrary
             public Vector3 Normal;
             public Vector3 Up;
             public Vector3 Left;
-
+            
             public VertexPositionNormalTexture[] Vertices;
             //        public int[] Indexes;
             public short[] Indexes;
@@ -37,6 +37,7 @@ namespace RPGLibrary
                 Normal = normal;
                 Up = up;
 
+                
                 // Calculate the quad corners
                 Left = Vector3.Cross(normal, Up);
                 Vector3 uppercenter = (Up * height / 2) + origin;
