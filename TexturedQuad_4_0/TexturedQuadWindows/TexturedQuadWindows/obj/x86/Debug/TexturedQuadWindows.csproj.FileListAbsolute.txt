@@ -31,7 +31,5 @@ C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQ
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.exe.config
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.exe
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.pdb
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\RPGLibrary.dll
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\RPGLibrary.pdb
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.exe
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
