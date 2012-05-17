@@ -25,14 +25,22 @@ namespace TexturedQuadWindows
         public Matrix ViewMatrix;
         public Matrix Projection;
         private int scrollValue;
-
         //Camera is simulated as a spherical co-ordinate system looking at  a center 
         //(which is called target). You can modify the phi and theta value using keyboard (check keyboard input)
+        static private Rectangle topRectangle;
+        static private Rectangle bottomRectangle;
+        static private Rectangle leftRectangle;
+        static private Rectangle rightRectangle;
         
         public Camera()
         {
             ResetCamera();
             scrollValue = Mouse.GetState().ScrollWheelValue;
+
+            topRectangle = new Rectangle(0, 0, 800, 5);
+            bottomRectangle = new Rectangle(0,595,800,5);
+            leftRectangle = new Rectangle(0, 0, 5, 600);
+            rightRectangle = new Rectangle(795, 0, 5, 600);
         }
 
         
@@ -63,6 +71,7 @@ namespace TexturedQuadWindows
             Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver2, (float)3 / 4, 1, 500);
 
             speed = 0.3f;
+            
         }
 
 
@@ -86,26 +95,25 @@ namespace TexturedQuadWindows
              * J and L changes the phi value.
              * I and K changes theta value.
              * Up and down changes the zoom (changes the radius)
-             * W,S,A,D to move the camera forward,backward,right and left respectively
+             * Use the mouse to move the camera
              * R resets the camera
            **/
         {
             KeyboardState keyboardState = Keyboard.GetState();
             MouseState mouseState = Mouse.GetState();
-            
-            if(keyboardState.IsKeyDown(Keys.J))
-            {theta-=0.02f;}
+            Point mousePoint = new Point(mouseState.X,mouseState.Y);
+            Vector3 move;
+
+
+
+
+            if (keyboardState.IsKeyDown(Keys.J))
+            { theta = MathHelper.Clamp(theta - 0.02f, 0.1f, MathHelper.PiOver2); }
             if (keyboardState.IsKeyDown(Keys.K))
-            { theta += 0.02f; }
+            { theta = MathHelper.Clamp(theta + 0.02f, 0.1f, MathHelper.PiOver2); }
 
             if(mouseState.MiddleButton==ButtonState.Pressed)
             {phi +=0.02f;}
-
-            //if(keyboardState.IsKeyDown(Keys.Up))
-            //{radius -=0.07f;}
-
-            //if(keyboardState.IsKeyDown(Keys.Down))
-            //{radius +=0.07f;}
 
             if ((scrollValue- mouseState.ScrollWheelValue) < 0)
             { 
@@ -117,23 +125,49 @@ namespace TexturedQuadWindows
                 radius += 0.3f;
                 scrollValue = mouseState.ScrollWheelValue;
             }
-            if (keyboardState.IsKeyDown(Keys.W))
+
+
+            if ((mouseState.LeftButton != ButtonState.Pressed)
+                && (mouseState.X <= 20)
+                && (mouseState.X > 0))
             {
-                MoveCamera(ViewMatrix.Forward);
+                move = Vector3.Cross(Target - Position, Vector3.Up);
+                move.Normalize();
+                MoveCamera(-move);
             }
-            if (keyboardState.IsKeyDown(Keys.S))
+
+            if ((mouseState.LeftButton != ButtonState.Pressed)
+                && (mouseState.X > (800 - 20))
+                && (mouseState.X < 800))
             {
-                MoveCamera(-ViewMatrix.Forward);
+                move = Vector3.Cross(Target - Position, Vector3.Up);
+                move.Normalize();
+                MoveCamera(move);
             }
-            if (keyboardState.IsKeyDown(Keys.A))
+
+            if ((mouseState.LeftButton != ButtonState.Pressed)
+                && (mouseState.Y <= 20)
+                && (mouseState.Y > 0))
             {
-                MoveCamera(-ViewMatrix.Right);
+
+                move = Target - Position;
+                move = new Vector3(move.X, 0, move.Z);
+                move.Normalize();
+                MoveCamera(move);
             }
-            if (keyboardState.IsKeyDown(Keys.D))
+
+            
+            if ((mouseState.LeftButton != ButtonState.Pressed)
+                && (mouseState.Y > (600 - 20))
+                && (mouseState.Y < 600))
             {
-                MoveCamera(ViewMatrix.Right);
+
+                move = Target - Position;
+                move = new Vector3(move.X, 0, move.Z);
+                move.Normalize();
+                MoveCamera(-move);
             }
-                        
+                                  
             if (keyboardState.IsKeyDown(Keys.R))
             {
                 ResetCamera();

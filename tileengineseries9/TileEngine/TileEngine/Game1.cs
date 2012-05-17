@@ -130,28 +130,28 @@ namespace TileEngine
 
             KeyboardState ks = Keyboard.GetState();
 
-            if (ks.IsKeyDown(Keys.NumPad7))
+            if (ks.IsKeyDown(Keys.Down))
             {
                 moveDir = new Vector2(-2, -1);
                 animation = "WalkNorthWest";
                 moveVector += new Vector2(-2, -1);
             }
 
-            if (ks.IsKeyDown(Keys.NumPad8))
+            if (ks.IsKeyDown(Keys.Up))
             {
                 moveDir = new Vector2(0, -1);
                 animation = "WalkNorth";
                 moveVector += new Vector2(0, -1);
             }
 
-            if (ks.IsKeyDown(Keys.NumPad9))
+            if (ks.IsKeyDown(Keys.Left))
             {
                 moveDir = new Vector2(2, -1);
                 animation = "WalkNorthEast";
                 moveVector += new Vector2(2, -1);
             }
 
-            if (ks.IsKeyDown(Keys.NumPad4))
+            if (ks.IsKeyDown(Keys.Right))
             {
                 moveDir = new Vector2(-2, 0);
                 animation = "WalkWest";
