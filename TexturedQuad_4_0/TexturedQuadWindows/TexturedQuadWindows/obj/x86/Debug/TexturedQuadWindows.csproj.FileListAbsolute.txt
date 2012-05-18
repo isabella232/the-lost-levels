@@ -33,3 +33,6 @@ C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQ
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.pdb
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.exe
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.LevelEditor.resources
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\GenerateResource.write.1.tlog
