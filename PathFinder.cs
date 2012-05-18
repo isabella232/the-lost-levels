@@ -55,9 +55,10 @@ public class PathFinder
                             return getPath(e);
                         }
 
-                        // Add e to the queue and dictionary
-                        queue.Enqueue(e);
-                        nodes.Add(e, 1);
+                        // Checking if we already iterated through this node
+                        if (nodes.ContainsKey(e)) { }
+                        else
+                        { queue.Enqueue(e); nodes.Add(e, e.label); };
                     }
                 }
             }
