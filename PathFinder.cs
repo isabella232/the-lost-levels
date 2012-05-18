@@ -9,9 +9,19 @@ public class Point
     { x = X; y = Y; parent = Parent; }
     public int x; public int y; public int label; public Point parent;
 
-    public override bool Equals(Point point)
+    public override bool Equals(Object obj)
     {
-        return (this.x == point.x && this.y == point.y);
+        Point other = obj as Point;
+        return (this.x == other.x && this.y == other.y);
+    }
+
+    public override int GetHashCode()
+    {
+        String s = this.x + ", " + this.y;
+        String st = String.Empty;
+        foreach (char c in s)
+            st += (int)c;
+        return Int32.Parse(st);
     }
 }
 
