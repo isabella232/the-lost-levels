@@ -12,7 +12,7 @@ namespace TexturedQuadWindows
     /*Works purely on keyboard input
      * Plan is to change this for mouse control but keyboard for now
      * */
-    class Camera
+    public class Camera
     {
 
         //my code
