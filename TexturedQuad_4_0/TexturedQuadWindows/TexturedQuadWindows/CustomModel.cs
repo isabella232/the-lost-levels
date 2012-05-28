@@ -26,14 +26,15 @@ namespace TexturedQuadWindows
         //will be eventually read in from properties file as height the object will be drawn at in y axis (i.e. up)
         public float heightabove = 2;
         private Game1 thisGame;
+        private float[] Properties;
         //constructor will eventually need file name of mesh model to be given as one of the inputs
-        public CustomModel(Game1 g, Vector3 position, Model ourmodel)   
+        public CustomModel(Game1 g, Vector3 position, Model ourmodel,float[] properties)   
             : base(g)
         {
-            Position = position;
+            Position =position;
             thisGame = g;
             themodel = ourmodel;
-           
+            Properties = properties;
         }
 
         public Vector3 Position { get; set; }
@@ -69,8 +70,11 @@ namespace TexturedQuadWindows
                     effect.View = view;
                     effect.Projection = projection;
                     effect.World = transforms[mesh.ParentBone.Index]
-                        * Matrix.CreateTranslation(tpos)
-                        ;
+                        *Matrix.CreateScale(Properties[0],Properties[1],Properties[2])
+                        *Matrix.CreateRotationX(MathHelper.ToRadians(Properties[3]))
+                        *Matrix.CreateRotationY(MathHelper.ToRadians(Properties[4]))
+                        *Matrix.CreateRotationZ(MathHelper.ToRadians(Properties[5]))
+                        * Matrix.CreateTranslation(tpos);
                 }
                 mesh.Draw();
             }

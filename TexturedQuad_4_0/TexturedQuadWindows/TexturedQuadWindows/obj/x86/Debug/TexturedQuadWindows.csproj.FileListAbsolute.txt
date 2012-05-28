@@ -67,3 +67,4 @@ C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQ
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.exe
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.LevelGUI.resources
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.LevelGUI.resources
