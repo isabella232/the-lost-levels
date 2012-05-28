@@ -119,6 +119,9 @@
       <DependentUpon>LevelGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="MapCell.cs" />
+    <Content Include="ModelProperties.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
