@@ -112,11 +112,11 @@
   <ItemGroup>
     <Compile Include="Camera.cs" />
     <Compile Include="CustomModel.cs" />
-    <Compile Include="LevelEditor.cs">
+    <Compile Include="LevelGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LevelEditor.Designer.cs">
-      <DependentUpon>LevelEditor.cs</DependentUpon>
+    <Compile Include="LevelGUI.Designer.cs">
+      <DependentUpon>LevelGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="MapCell.cs" />
     <Compile Include="Player.cs" />
@@ -171,8 +171,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LevelEditor.resx">
-      <DependentUpon>LevelEditor.cs</DependentUpon>
+    <EmbeddedResource Include="LevelGUI.resx">
+      <DependentUpon>LevelGUI.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
