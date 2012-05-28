@@ -115,6 +115,11 @@ namespace TexturedQuadWindows
             if(mouseState.MiddleButton==ButtonState.Pressed)
             {phi +=0.02f;}
 
+            if(keyboardState.IsKeyDown(Keys.Space))
+            {
+                phi += 0.02f;
+            }
+
             if ((scrollValue- mouseState.ScrollWheelValue) < 0)
             { 
                 radius -= 0.3f; 
