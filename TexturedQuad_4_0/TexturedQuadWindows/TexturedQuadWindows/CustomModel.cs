@@ -69,8 +69,6 @@ namespace TexturedQuadWindows
                     effect.View = view;
                     effect.Projection = projection;
                     effect.World = transforms[mesh.ParentBone.Index]
-                        * Matrix.CreateScale(0.5f, 0.5f, 0.5f)
-                        * Matrix.CreateRotationX(MathHelper.ToRadians(-90))
                         * Matrix.CreateTranslation(tpos)
                         ;
                 }
