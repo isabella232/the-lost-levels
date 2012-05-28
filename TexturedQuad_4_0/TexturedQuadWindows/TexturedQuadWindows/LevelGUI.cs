@@ -20,9 +20,10 @@ namespace TexturedQuadWindows
         {
 
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        public int model_index;
+        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.model_index = comboBox1.SelectedIndex;
 
         }
 
