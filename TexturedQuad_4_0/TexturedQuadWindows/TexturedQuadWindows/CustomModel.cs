@@ -70,11 +70,12 @@ namespace TexturedQuadWindows
                     effect.View = view;
                     effect.Projection = projection;
                     effect.World = transforms[mesh.ParentBone.Index]
-                        *Matrix.CreateScale(Properties[0],Properties[1],Properties[2])
-                        *Matrix.CreateRotationX(MathHelper.ToRadians(Properties[3]))
-                        *Matrix.CreateRotationY(MathHelper.ToRadians(Properties[4]))
-                        *Matrix.CreateRotationZ(MathHelper.ToRadians(Properties[5]))
-                        * Matrix.CreateTranslation(tpos);
+                        * Matrix.CreateScale(Properties[0], Properties[1], Properties[2])
+                        * Matrix.CreateRotationX(MathHelper.ToRadians(Properties[3]))
+                        * Matrix.CreateRotationY(MathHelper.ToRadians(Properties[4]))
+                        * Matrix.CreateRotationZ(MathHelper.ToRadians(Properties[5]))
+                        * Matrix.CreateTranslation(tpos+(new  Vector3(Properties[6],Properties[7],Properties[8])));
+                        
                 }
                 mesh.Draw();
             }
