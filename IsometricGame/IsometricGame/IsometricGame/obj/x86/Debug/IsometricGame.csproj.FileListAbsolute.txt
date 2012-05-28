@@ -20,3 +20,15 @@ C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\Isometric
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\IsometricGame.exe
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\IsometricGame.pdb
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part1_tileset.xnb
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part2_tileset.xnb
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part3_tileset.xnb
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\part4_tileset.xnb
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\Pericles6.xnb
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\IsometricGame.exe
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\IsometricGame.pdb
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\IsometricGame.exe
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\IsometricGame.pdb
+C:\Users\Sean\Desktop\lost-levels\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\guy.xnb

@@ -27,6 +27,12 @@ namespace IsometricGame
         float heightRowDepthMod;
         SpriteFont pericles6;
 
+        List<GameObject> objects = new List<GameObject>();
+
+        Vector3 cameraPosition = new Vector3(0f, 0.0f, 0.0f);
+        Matrix cameraProjectionMatrix;
+        Matrix cameraViewMatrix;
+
 
         public Game1()
         {
@@ -62,6 +68,14 @@ namespace IsometricGame
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            UpdateView();
+            GameObject guy = new GameObject();
+            guy.Name = "guy";
+            guy.Model = Content.Load<Model>("guy");
+            guy.Position = new Vector3(0f, 0f, -50f);
+            guy.Rotation = new Vector3((float)(Math.PI / -2), 0f, 0f);
+            objects.Add(guy);
+
 
             Tile.TileSetTexture = Content.Load<Texture2D>(@"part4_tileset");
             pericles6 = Content.Load<SpriteFont>(@"Pericles6");
@@ -85,6 +99,18 @@ namespace IsometricGame
         /// checking for collisions, gathering input, and playing audio.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        /// 
+
+
+        protected void UpdateView()
+        {
+            Vector3 lookAt = new Vector3(0f, 0f, -1f);
+            cameraViewMatrix = Matrix.CreateLookAt(cameraPosition, lookAt, Vector3.Up);
+            cameraProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(
+                MathHelper.ToRadians(45.0f), graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 1000.0f);
+        }
+
+
         protected override void Update(GameTime gameTime)
         {
             // Allows the game to exit
@@ -115,6 +141,8 @@ namespace IsometricGame
                 Camera.Location.Y = MathHelper.Clamp(Camera.Location.Y + 2, 0,
                     (myMap.MapHeight - squaresDown) * Tile.TileStepY);
             }
+
+
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -130,6 +158,11 @@ namespace IsometricGame
 
 
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+
+            foreach (GameObject guy in objects)
+            {
+                guy.Draw(cameraViewMatrix, cameraProjectionMatrix);
+            }
 
             float maxdepth = ((myMap.MapWidth + 1) + ((myMap.MapHeight + 1) * Tile.TileWidth)) * 10;
             float depthOffset;
@@ -225,9 +258,11 @@ namespace IsometricGame
                                             1.0f, SpriteEffects.None, 0.0f);*/
                     }
                 }
-            }
-
+            } 
+            
             spriteBatch.End();
+
+           
 
             // TODO: Add your drawing code here
 
