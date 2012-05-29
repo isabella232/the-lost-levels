@@ -119,9 +119,7 @@
       <DependentUpon>LevelGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="MapCell.cs" />
-    <Content Include="level1.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Maps\level1.txt" />
     <Content Include="ModelProperties.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

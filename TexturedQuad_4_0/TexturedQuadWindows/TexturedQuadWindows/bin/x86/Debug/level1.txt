@@ -1,3 +1,3 @@
-guy 3 5
-enemy 9 5
-well 7 9
+tree 5 3
+guy 9 9
+enemy 5 11

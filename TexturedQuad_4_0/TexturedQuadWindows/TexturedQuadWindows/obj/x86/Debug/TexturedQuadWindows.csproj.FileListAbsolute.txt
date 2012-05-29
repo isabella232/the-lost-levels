@@ -22,20 +22,6 @@ D:\Dropbox\EECS 395 Game Engine Design\TexturedQuad_4_0\TexturedQuadWindows\Text
 D:\Dropbox\EECS 395 Game Engine Design\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\grass_plain.xnb
 D:\Dropbox\EECS 395 Game Engine Design\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\RPGLibrary.dll
 D:\Dropbox\EECS 395 Game Engine Design\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\RPGLibrary.pdb
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\GameThumbnail.png
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Glass.xnb
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\grass_plain.xnb
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\guy.xnb
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.exe.config
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.exe
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.pdb
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.exe
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Tree.xnb
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\GameThumbnail.png
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Glass.xnb
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\grass_plain.xnb
@@ -51,11 +37,6 @@ C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQ
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.exe
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.LevelGUI.resources
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.LevelGUI.resources
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\ModelProperties.txt
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\level1.txt
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\enemy.xnb
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\well.xnb
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\level1.txt
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\ModelProperties.txt
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\GameThumbnail.png
@@ -75,3 +56,21 @@ D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\Tex
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.exe
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\ModelProperties.txt
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\GameThumbnail.png
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Glass.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\grass_plain.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Tree.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\guy.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\enemy.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\well.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.exe.config
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.exe
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.pdb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.LevelGUI.resources
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.exe
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
