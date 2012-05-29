@@ -40,7 +40,6 @@ namespace TheLostLevels
 
         public void Draw(GameTime gameTime, GraphicsDevice graphics,Camera cam)
         {
-            
             Matrix[] transforms = new Matrix[TheModel.Bones.Count];
             float aspectRatio = graphics.Viewport.AspectRatio;
             TheModel.CopyAbsoluteBoneTransformsTo(transforms);
@@ -66,6 +65,7 @@ namespace TheLostLevels
                 }
                 mesh.Draw();
             }
+            
 
 
             base.Draw(gameTime);

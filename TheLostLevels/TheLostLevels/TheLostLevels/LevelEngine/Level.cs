@@ -15,11 +15,7 @@ namespace TheLostLevels
 {
     public class Level :DrawableGameComponent
     {
-        GraphicsDeviceManager graphics;
-
-        int screenHeight = 600;
-        int screenWidth = 800;
-
+       
         Texture2D texture; //The texture that has ground plan
         List<BasicEffect> Effects; //The list of basic effects that shades objects in the game
 
@@ -53,7 +49,7 @@ namespace TheLostLevels
         }
         private void LoadLevelFile()
         {
-            TextReader reader  = new StreamReader("level1.txt");
+            TextReader reader  = new StreamReader(@"Attributes\level1.txt");
             char[] delimiterChars = {' ','\t'};
             while (reader.Peek() != -1)
             {

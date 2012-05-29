@@ -35,7 +35,7 @@ public class PathFinder
 
     // findPath essentially does a BFS on a graph while "building" it
     // start and ened should have parent=null
-    public static List<Point> findPath(int[][] matrix, Point start, Point end)
+    public static List<Point> findPath(int[,] matrix, Point start, Point end)
     {
         // Initializing Data Structures
         Queue<Point> queue = new Queue<Point>();
@@ -52,10 +52,10 @@ public class PathFinder
             for (int j = -1; j < 2; j++)
             {
                 // Making sure we don't cause an ArrayOutOfBounds Exception
-                if (t.x + i >= 0 && t.x + i < matrix.Length && t.y + j >= 0 && t.y < matrix[t.y].Length)
+                if (t.x + i >= 0 && t.x + i < matrix.Length && t.y + j >= 0 && t.y < matrix.Length)
                 {
                     // If Walkable
-                    if (matrix[t.x + i][t.y + j] == 1)
+                    if (matrix[t.x + i,t.y + j] == 1)
                     {
                         //Create Point with parent t
                         Point e = new Point(t.x + i, t.y + j, t);
@@ -83,9 +83,9 @@ public class PathFinder
             {
                 for (int j = -1; j < 2; j++)
                 {
-                    if (t.x + i >= 0 && t.x + i < matrix.Length && t.y + j >= 0 && t.y < matrix[t.y].Length)
+                    if (t.x + i >= 0 && t.x + i < matrix.Length && t.y + j >= 0 && t.y < matrix.Length)
                     {
-                        if (matrix[t.x + i][t.y + j] == 1)
+                        if (matrix[t.x + i,t.y + j] == 1)
                         {
                             Point e = new Point(t.x + i, t.y + j, t);
                             if (e.Equals(end))

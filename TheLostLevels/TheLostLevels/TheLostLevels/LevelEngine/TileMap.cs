@@ -12,8 +12,8 @@ namespace TheLostLevels
     class TileMap 
     {
         public Tile[,] tiles;
-        public int MapWidth = 50;
-        public int MapHeight = 50;
+        static public int MapWidth = 50;
+        static public int MapHeight = 50;
         Game thisGame;
         public TileMap(string MapFilePath, Game g)
         {
@@ -39,7 +39,7 @@ namespace TheLostLevels
             }
         }
 
-        public Microsoft.Xna.Framework.Point GetTileIndex(Vector3 point)
+        public static Microsoft.Xna.Framework.Point GetTileIndex(Vector3 point)
         {
             return new Microsoft.Xna.Framework.Point((int)(Math.Floor(point.X)/Tile.TileHeight), (int)(Math.Floor(point.Z)/Tile.TileWidth));
         }
