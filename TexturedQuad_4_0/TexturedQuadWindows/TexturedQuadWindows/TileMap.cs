@@ -12,8 +12,8 @@ namespace TexturedQuadWindows
     class TileMap 
     {
         public Tile[,] tiles;
-        public int MapWidth = 100;
-        public int MapHeight = 100;
+        public int MapWidth = 20;
+        public int MapHeight = 20;
         Game thisGame;
         public TileMap(string MapFilePath, Game g)
         {
