@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>RootNode</Name>
     <Identity>
-      <SourceFilename>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindowsContent\well.fbx</SourceFilename>
+      <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindowsContent\well.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -32,7 +32,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Well</Name>
       <Identity>
-        <SourceFilename>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindowsContent\well.fbx</SourceFilename>
+        <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindowsContent\well.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

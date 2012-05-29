@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Glass.xnb</Output>
-      <Time>2012-05-28T19:51:29.7867196-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Glass.xnb</Output>
+      <Time>2012-05-19T17:33:53.6988152-05:00</Time>
     </Item>
     <Item>
       <Source>grass_plain.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\grass_plain.xnb</Output>
-      <Time>2012-05-28T19:51:29.1566836-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\grass_plain.xnb</Output>
+      <Time>2012-05-19T17:33:53.5348058-05:00</Time>
     </Item>
     <Item>
       <Source>Tree.fbx</Source>
@@ -25,11 +25,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Tree.xnb</Output>
-      <Time>2012-05-28T23:45:03.3587059-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Tree.xnb</Output>
+      <Time>2012-05-28T21:40:40.9590282-05:00</Time>
       <Dependency>
-        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\Tree_0.xml</Key>
-        <Value>2012-05-28T23:46:30.1186683-05:00</Value>
+        <Key>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\Tree_0.xml</Key>
+        <Value>2012-05-29T00:23:50.2111335-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -38,11 +38,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\guy.xnb</Output>
-      <Time>2012-05-28T19:51:29.1126811-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\guy.xnb</Output>
+      <Time>2012-05-25T15:08:38.4929245-05:00</Time>
       <Dependency>
-        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\guy_0.xml</Key>
-        <Value>2012-05-28T23:46:52.6939595-05:00</Value>
+        <Key>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\guy_0.xml</Key>
+        <Value>2012-05-29T00:23:54.9544048-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -51,11 +51,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\enemy.xnb</Output>
-      <Time>2012-05-28T23:45:03.1996968-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\enemy.xnb</Output>
+      <Time>2012-05-28T21:40:40.9530278-05:00</Time>
       <Dependency>
-        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\enemy_0.xml</Key>
-        <Value>2012-05-28T23:47:16.9113447-05:00</Value>
+        <Key>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\enemy_0.xml</Key>
+        <Value>2012-05-29T00:23:59.7156771-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -64,40 +64,40 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\well.xnb</Output>
-      <Time>2012-05-28T23:45:02.7666721-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\well.xnb</Output>
+      <Time>2012-05-28T21:40:40.9340267-05:00</Time>
       <Dependency>
-        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\well_0.xml</Key>
-        <Value>2012-05-28T23:47:18.0834117-05:00</Value>
+        <Key>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\well_0.xml</Key>
+        <Value>2012-05-29T00:23:59.924689-05:00</Value>
       </Dependency>
     </Item>
     <Item>
       <Source>Tree.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\Tree_0.xml</Output>
-      <Time>2012-05-28T23:45:03.3587059-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\Tree_0.xml</Output>
+      <Time>2012-05-28T21:40:40.9590282-05:00</Time>
     </Item>
     <Item>
       <Source>guy.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\guy_0.xml</Output>
-      <Time>2012-05-28T19:51:29.1126811-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\guy_0.xml</Output>
+      <Time>2012-05-25T15:08:38.4929245-05:00</Time>
     </Item>
     <Item>
       <Source>enemy.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\enemy_0.xml</Output>
-      <Time>2012-05-28T23:45:03.1996968-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\enemy_0.xml</Output>
+      <Time>2012-05-28T21:40:40.9530278-05:00</Time>
     </Item>
     <Item>
       <Source>well.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\well_0.xml</Output>
-      <Time>2012-05-28T23:45:02.7666721-05:00</Time>
+      <Output>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\well_0.xml</Output>
+      <Time>2012-05-28T21:40:40.9340267-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -106,10 +106,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindowsContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindowsContent\</RootDirectory>
+      <LoggerRootDirectory>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -138,7 +138,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-03-28T11:03:39.989994-05:00</Value>
+        <Value>2012-03-30T00:48:51.0223528-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
