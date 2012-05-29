@@ -59,7 +59,8 @@ namespace TheLostLevels
                         * Matrix.CreateRotationX(MathHelper.ToRadians(Properties[3]))
                         * Matrix.CreateRotationY(MathHelper.ToRadians(Properties[4]))
                         * Matrix.CreateRotationZ(MathHelper.ToRadians(Properties[5]))
-                        * Matrix.CreateTranslation(Position
+                        * Matrix.CreateTranslation(Position 
+                                                + new Vector3(0,2,0)
                                                 + new Vector3(Properties[6], Properties[7], Properties[8]));
           
                 }

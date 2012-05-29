@@ -122,12 +122,12 @@ namespace TheLostLevels
 
             if ((scrollValue- mouseState.ScrollWheelValue) < 0)
             { 
-                radius -= 0.3f; 
+                radius -= 0.7f; 
                 scrollValue = mouseState.ScrollWheelValue;
             }
             if ((scrollValue - mouseState.ScrollWheelValue) > 0)
             {
-                radius += 0.3f;
+                radius += 0.7f;
                 scrollValue = mouseState.ScrollWheelValue;
             }
 
