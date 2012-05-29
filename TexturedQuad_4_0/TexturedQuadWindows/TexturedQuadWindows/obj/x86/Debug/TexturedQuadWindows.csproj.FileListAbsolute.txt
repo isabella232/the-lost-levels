@@ -72,3 +72,6 @@ D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\Tex
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.exe
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\level1.txt
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\level1.txt
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\enemy.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\well.xnb

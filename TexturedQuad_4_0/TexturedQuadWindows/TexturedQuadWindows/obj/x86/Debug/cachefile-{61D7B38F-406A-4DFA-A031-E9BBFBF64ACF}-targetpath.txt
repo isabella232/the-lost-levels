@@ -2,3 +2,5 @@ Content\Glass.xnb
 Content\grass_plain.xnb
 Content\Tree.xnb
 Content\guy.xnb
+Content\enemy.xnb
+Content\well.xnb
