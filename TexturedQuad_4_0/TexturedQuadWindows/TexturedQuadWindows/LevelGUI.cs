@@ -27,9 +27,10 @@ namespace TexturedQuadWindows
 
         }
 
+        public bool export = false;
         private void button1_Click(object sender, EventArgs e)
         {
-
+            export = true;
         }
     }
 }

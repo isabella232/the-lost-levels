@@ -19,6 +19,8 @@ namespace TexturedQuadWindows
     {
         Model themodel;
 
+        public string modelname;
+
         public bool dropped = false;
 
         public Point tileClicked;
@@ -28,13 +30,14 @@ namespace TexturedQuadWindows
         private Game1 thisGame;
         private float[] Properties;
         //constructor will eventually need file name of mesh model to be given as one of the inputs
-        public CustomModel(Game1 g, Vector3 position, Model ourmodel,float[] properties)   
+        public CustomModel(Game1 g, Vector3 position, Model ourmodel,float[] properties, string name)   
             : base(g)
         {
             Position =position;
             thisGame = g;
             themodel = ourmodel;
             Properties = properties;
+            modelname = name;
         }
 
         public Vector3 Position { get; set; }

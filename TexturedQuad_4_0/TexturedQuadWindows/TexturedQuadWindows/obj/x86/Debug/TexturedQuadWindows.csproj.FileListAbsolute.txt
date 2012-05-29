@@ -52,12 +52,15 @@ C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQ
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
 C:\Users\Matt\Desktop\Lost Levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.LevelGUI.resources
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.LevelGUI.resources
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\ModelProperties.txt
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\ModelProperties.txt
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\GameThumbnail.png
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Glass.xnb
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\grass_plain.xnb
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\Tree.xnb
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\guy.xnb
+D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\enemy.xnb
+D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\Content\well.xnb
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.exe.config
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.exe
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\TexturedQuadWindows.pdb
@@ -68,4 +71,4 @@ D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\Tex
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.exe
 D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\obj\x86\Debug\TexturedQuadWindows.pdb
-C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\ModelProperties.txt
+D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TexturedQuad_4_0\TexturedQuadWindows\TexturedQuadWindows\bin\x86\Debug\level1.txt
