@@ -1,0 +1,4 @@
+0 grass_plain	
+1 grass_small 
+2 grass
+3 dirt_road
