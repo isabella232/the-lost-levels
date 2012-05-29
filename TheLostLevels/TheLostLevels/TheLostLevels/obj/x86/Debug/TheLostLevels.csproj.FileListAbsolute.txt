@@ -9,3 +9,5 @@ C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLe
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\TheLostLevels.exe
 C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\TheLostLevels.pdb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Attributes\level1.txt
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Attributes\ModelProperties.txt

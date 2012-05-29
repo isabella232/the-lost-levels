@@ -73,24 +73,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Camera.cs" />
-    <Compile Include="CustomModel.cs" />
-    <Compile Include="Level.cs" />
-    <Compile Include="MapCell.cs" />
-    <Compile Include="ModelProperties.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="LevelEngine\CustomModel.cs" />
+    <Compile Include="LevelEngine\Level.cs" />
+    <Compile Include="LevelEngine\MapCell.cs" />
+    <Compile Include="LevelEngine\ModelProperties.cs" />
+    <Compile Include="Player\PathFinder.cs" />
+    <Compile Include="Player\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
-    <Compile Include="Quad.cs" />
-    <Compile Include="Tile.cs" />
-    <Compile Include="TileMap.cs" />
+    <Compile Include="LevelEngine\Quad.cs" />
+    <Compile Include="LevelEngine\Tile.cs" />
+    <Compile Include="LevelEngine\TileMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
-    <Content Include="ModelProperties.txt" />
+    <Content Include="Attributes\level1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Attributes\ModelProperties.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TheLostLevelsContent\TheLostLevelsContent.contentproj">
@@ -125,6 +131,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--

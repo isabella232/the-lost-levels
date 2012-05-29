@@ -52,8 +52,8 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
-    <Compile Include="Tree.fbx">
-      <Name>Tree</Name>
+    <Compile Include="tree.fbx">
+      <Name>tree</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>

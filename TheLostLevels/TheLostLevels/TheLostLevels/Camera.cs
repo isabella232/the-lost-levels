@@ -67,9 +67,7 @@ namespace TheLostLevels
 
             Target = center;
             ViewMatrix = Matrix.CreateLookAt(center + toSpherical(radius, phi, theta), Target, Vector3.Up);
-            //ViewMatrix = Matrix.CreateLookAt(new Vector3(0, 2, 0), new Vector3(1, 0, 1), Vector3.Up);
             Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver2, (float)3 / 4, 1, 500);
-
             speed = 0.3f;
             
         }
@@ -101,7 +99,9 @@ namespace TheLostLevels
         {
             KeyboardState keyboardState = Keyboard.GetState();
             MouseState mouseState = Mouse.GetState();
-            Point mousePoint = new Point(mouseState.X,mouseState.Y);
+            Microsoft.Xna.Framework.Point mousePoint 
+                = new Microsoft.Xna.Framework.Point(mouseState.X,mouseState.Y);
+            
             Vector3 move;
 
 
@@ -133,7 +133,7 @@ namespace TheLostLevels
 
 
             if ((mouseState.LeftButton != ButtonState.Pressed)
-                && (mouseState.X <= 20)
+                && (mouseState.X <= 50)
                 && (mouseState.X > 0))
             {
                 move = Vector3.Cross(Target - Position, Vector3.Up);
@@ -142,7 +142,7 @@ namespace TheLostLevels
             }
 
             if ((mouseState.LeftButton != ButtonState.Pressed)
-                && (mouseState.X > (800 - 20))
+                && (mouseState.X > (800 - 50))
                 && (mouseState.X < 800))
             {
                 move = Vector3.Cross(Target - Position, Vector3.Up);
