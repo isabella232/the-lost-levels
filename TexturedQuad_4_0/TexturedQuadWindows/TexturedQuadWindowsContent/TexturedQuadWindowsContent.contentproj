@@ -16,6 +16,9 @@
     <RootNamespace>TexturedQuadWindowsContent</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Meshellator">
+      <HintPath>D:\Chrome Downloads\roastedamoeba-osiris-346707e\lib\Meshellator\Meshellator.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
@@ -34,15 +37,19 @@
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
+    <Reference Include="Nexus">
+      <HintPath>D:\Chrome Downloads\roastedamoeba-osiris-346707e\lib\Meshellator\Nexus.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjImporter">
+      <HintPath>..\..\..\ModelImporterSample_4_0\ModelImporterSample\ObjImporter\bin\x86\Release\ObjImporter.dll</HintPath>
+    </Reference>
+    <Reference Include="TiffImporter">
+      <HintPath>..\..\..\TheLostLevels\TiffImporter\bin\x86\Debug\TiffImporter.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Glass.png">
-      <Name>Glass</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Tree.fbx">
-      <Name>Tree</Name>
+    <Compile Include="tree.fbx">
+      <Name>tree</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
@@ -71,6 +78,23 @@
   <ItemGroup>
     <Compile Include="well.fbx">
       <Name>well</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="wolf.fbx">
+      <Name>wolf</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="textures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="windmill.fbx">
+      <Name>windmill</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>

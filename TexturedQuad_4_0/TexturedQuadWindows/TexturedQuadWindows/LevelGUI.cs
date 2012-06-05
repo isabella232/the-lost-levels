@@ -14,6 +14,10 @@ namespace TexturedQuadWindows
         public LevelGUI()
         {
             InitializeComponent();
+            foreach(String s in ModelProperties.Properties.Keys)
+            {
+                comboBox1.Items.Add(s);
+            }
         }
 
         private void LevelGUI_Load(object sender, EventArgs e)

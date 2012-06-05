@@ -1,3 +1,0 @@
-tree 5 3
-guy 9 9
-enemy 5 11
