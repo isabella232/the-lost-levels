@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 
 
-// Creating a custom Point class that has coordinates and a way to recognize the parent
-public class Point
+// Creating a custom BFSNode class that has coordinates and a way to recognize the parent
+public class BFSNode
 {
-    public Point(int X, int Y, Point Parent)
+    public BFSNode(int X, int Y, BFSNode Parent)
     { x = X; y = Y; parent = Parent; }
-    public int x; public int y; public int label; public Point parent;
+    public int x; public int y; public int label; public BFSNode parent;
 
     public override bool Equals(Object obj)
     {
-        Point other = obj as Point;
+        BFSNode other = obj as BFSNode;
         return (this.x == other.x && this.y == other.y);
     }
 
@@ -35,16 +35,16 @@ public class PathFinder
 
     // findPath essentially does a BFS on a graph while "building" it
     // start and ened should have parent=null
-    public static List<Point> findPath(int[][] matrix, Point start, Point end)
+    public static List<BFSNode> findPath(int[][] matrix, BFSNode start, BFSNode end)
     {
         // Initializing Data Structures
-        Queue<Point> queue = new Queue<Point>();
-        Dictionary<Point, int> nodes = new Dictionary<Point,int>();
+        Queue<BFSNode> queue = new Queue<BFSNode>();
+        Dictionary<BFSNode, int> nodes = new Dictionary<BFSNode,int>();
 
-        // Enqueue and Add to Dictionary, and creating a temporary Point t
+        // Enqueue and Add to Dictionary, and creating a temporary BFSNode t
         queue.Enqueue(start);
         nodes.Add(start, 1);
-        Point t = queue.Dequeue();
+        BFSNode t = queue.Dequeue();
 
         // Checking 8 tiles around
         for (int i = -1; i < 2; i++ )
@@ -57,8 +57,8 @@ public class PathFinder
                     // If Walkable
                     if (matrix[t.x + i][t.y + j] == 1)
                     {
-                        //Create Point with parent t
-                        Point e = new Point(t.x + i, t.y + j, t);
+                        //Create BFSNode with parent t
+                        BFSNode e = new BFSNode(t.x + i, t.y + j, t);
 
                         if (e.Equals(end))
                         {
@@ -87,7 +87,7 @@ public class PathFinder
                     {
                         if (matrix[t.x + i][t.y + j] == 1)
                         {
-                            Point e = new Point(t.x + i, t.y + j, t);
+                            BFSNode e = new BFSNode(t.x + i, t.y + j, t);
                             if (e.Equals(end))
                             {
                                 return getPath(e);
@@ -103,14 +103,14 @@ public class PathFinder
             }
         }
 
-        return new List<Point>();
+        return new List<BFSNode>();
     }
 
-    private static List<Point> getPath(Point end)
+    private static List<BFSNode> getPath(BFSNode end)
     {
-        List<Point> path = new List<Point>();
-        Point curr = end;
-        Point next = end.parent;
+        List<BFSNode> path = new List<BFSNode>();
+        BFSNode curr = end;
+        BFSNode next = end.parent;
 
         // Adding the parent nodes until the start, which should have a null parent
         while (curr != null)
@@ -119,7 +119,7 @@ public class PathFinder
             curr = curr.parent;
         }
 
-        // Reverse the indices in order to have the start point at the beginning
+        // Reverse the indices in order to have the start BFSNode at the beginning
         path.Reverse();
         return path;
     }
