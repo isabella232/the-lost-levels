@@ -1,0 +1,5 @@
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TiffImporter\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TiffImporter\bin\x86\Debug\TiffImporter.dll
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TiffImporter\bin\x86\Debug\TiffImporter.pdb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TiffImporter\obj\x86\Debug\TiffImporter.dll
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TiffImporter\obj\x86\Debug\TiffImporter.pdb

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
       <Source>grass.jpg</Source>
@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\grass.xnb</Output>
-      <Time>2012-05-28T15:56:35.577577-05:00</Time>
+      <Time>2012-05-28T19:51:30.0247333-05:00</Time>
     </Item>
     <Item>
       <Source>grass_plain.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\grass_plain.xnb</Output>
-      <Time>2012-05-28T15:56:35.612579-05:00</Time>
+      <Time>2012-05-28T19:51:29.1566836-05:00</Time>
     </Item>
     <Item>
       <Source>grass_small.png</Source>
@@ -26,7 +26,21 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\grass_small.xnb</Output>
-      <Time>2012-05-28T15:56:35.6155792-05:00</Time>
+      <Time>2012-05-28T19:51:29.5037035-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wolf.fbx</Source>
+      <Name>wolf</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\wolf.xnb</Output>
+      <Time>2012-06-05T14:15:08.1548005-05:00</Time>
+      <Dependency>
+        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\wolf_0.xml</Key>
+        <Value>2012-06-05T14:15:13.1870883-05:00</Value>
+      </Dependency>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\wolftexture_0.xnb</Request>
     </Item>
     <Item>
       <Source>guy.fbx</Source>
@@ -35,38 +49,24 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\guy.xnb</Output>
-      <Time>2012-05-28T15:56:35.6575816-05:00</Time>
+      <Time>2012-05-28T19:51:29.1126811-05:00</Time>
       <Dependency>
         <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\guy_0.xml</Key>
-        <Value>2012-05-28T15:58:57.3176841-05:00</Value>
+        <Value>2012-06-05T14:15:46.1039711-05:00</Value>
       </Dependency>
     </Item>
     <Item>
-      <Source>Tree.fbx</Source>
-      <Name>Tree</Name>
+      <Source>tree.fbx</Source>
+      <Name>tree</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\Tree.xnb</Output>
-      <Time>2012-05-28T15:56:35.6605817-05:00</Time>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\tree.xnb</Output>
+      <Time>2012-05-28T23:45:03.3587059-05:00</Time>
       <Dependency>
-        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\Tree_0.xml</Key>
-        <Value>2012-05-28T15:58:58.9497774-05:00</Value>
+        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\tree_0.xml</Key>
+        <Value>2012-06-05T14:15:46.5799983-05:00</Value>
       </Dependency>
-    </Item>
-    <Item>
-      <Source>guy.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\guy_0.xml</Output>
-      <Time>2012-05-28T15:56:35.6575816-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Tree.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\Tree_0.xml</Output>
-      <Time>2012-05-28T15:56:35.6605817-05:00</Time>
     </Item>
     <Item>
       <Source>enemy.fbx</Source>
@@ -75,10 +75,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\enemy.xnb</Output>
-      <Time>2012-05-29T01:21:42.0363713-05:00</Time>
+      <Time>2012-05-28T23:45:03.1996968-05:00</Time>
       <Dependency>
         <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\enemy_0.xml</Key>
-        <Value>2012-05-29T01:22:26.9919426-05:00</Value>
+        <Value>2012-06-05T14:15:54.8594719-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -88,25 +88,210 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\well.xnb</Output>
-      <Time>2012-05-29T01:21:43.5384572-05:00</Time>
+      <Time>2012-05-28T23:45:02.7666721-05:00</Time>
       <Dependency>
         <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\well_0.xml</Key>
-        <Value>2012-05-29T01:22:29.7020976-05:00</Value>
+        <Value>2012-06-05T14:15:55.2154922-05:00</Value>
       </Dependency>
+    </Item>
+    <Item>
+      <Source>textures\WOLF.TIF</Source>
+      <Name>textures\WOLF</Name>
+      <Importer>TiffImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\textures\WOLF.xnb</Output>
+      <Time>2012-06-04T12:27:47.4591937-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wolf.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\wolf_0.xml</Output>
+      <Time>2012-06-05T14:15:08.1548005-05:00</Time>
+    </Item>
+    <Item>
+      <Source>guy.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\guy_0.xml</Output>
+      <Time>2012-05-28T19:51:29.1126811-05:00</Time>
+    </Item>
+    <Item>
+      <Source>tree.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\tree_0.xml</Output>
+      <Time>2012-05-28T23:45:03.3587059-05:00</Time>
     </Item>
     <Item>
       <Source>enemy.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\enemy_0.xml</Output>
-      <Time>2012-05-29T01:21:42.0363713-05:00</Time>
+      <Time>2012-05-28T23:45:03.1996968-05:00</Time>
     </Item>
     <Item>
       <Source>well.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\well_0.xml</Output>
-      <Time>2012-05-29T01:21:43.5384572-05:00</Time>
+      <Time>2012-05-28T23:45:02.7666721-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wolftexture.tif</Source>
+      <Importer>TiffImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\wolftexture_0.xnb</Output>
+      <Time>2012-06-04T13:16:58.2943119-05:00</Time>
+    </Item>
+    <Item>
+      <Source>windmill.fbx</Source>
+      <Name>windmill</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\windmill.xnb</Output>
+      <Time>2012-06-04T22:39:04.8427411-05:00</Time>
+      <Dependency>
+        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\windmill_0.xml</Key>
+        <Value>2012-06-05T14:30:37.3039448-05:00</Value>
+      </Dependency>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\w1_0.xnb</Request>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\cs_0.xnb</Request>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\d49_0.xnb</Request>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\door16_0.xnb</Request>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\w2_0.xnb</Request>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\cr_0.xnb</Request>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\w10_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>windmill.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\windmill_0.xml</Output>
+      <Time>2012-06-04T22:39:04.8427411-05:00</Time>
+    </Item>
+    <Item>
+      <Source>w1.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\w1_0.xnb</Output>
+      <Time>2000-12-31T16:00:00-06:00</Time>
+    </Item>
+    <Item>
+      <Source>cs.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\cs_0.xnb</Output>
+      <Time>2000-12-31T16:00:00-06:00</Time>
+    </Item>
+    <Item>
+      <Source>d49.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\d49_0.xnb</Output>
+      <Time>2000-12-31T16:00:00-06:00</Time>
+    </Item>
+    <Item>
+      <Source>door16.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\door16_0.xnb</Output>
+      <Time>2000-12-31T16:00:00-06:00</Time>
+    </Item>
+    <Item>
+      <Source>w2.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\w2_0.xnb</Output>
+      <Time>2000-12-31T16:00:00-06:00</Time>
+    </Item>
+    <Item>
+      <Source>cr.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\cr_0.xnb</Output>
+      <Time>2000-12-31T16:00:00-06:00</Time>
+    </Item>
+    <Item>
+      <Source>w10.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\w10_0.xnb</Output>
+      <Time>2000-12-31T16:00:00-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -121,6 +306,10 @@
       <OutputDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
+      <Assembly>
+        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TiffImporter\bin\x86\Debug\TiffImporter.dll</Key>
+        <Value>2012-06-04T12:23:49.7175956-05:00</Value>
+      </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2011-09-01T16:22:30-05:00</Value>

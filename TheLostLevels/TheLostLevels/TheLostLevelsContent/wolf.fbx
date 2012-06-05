@@ -9085,8 +9085,8 @@ Objects:  {
 			Property: "AccessMode", "enum", "",0
 		}
 		UseMipMap: 0
-		Filename: "WOLF.TIF"
-		RelativeFilename: "C:\Users\Sean\Desktop\lost-levels\Blender Models\wolf\WOLF.TIF"
+		Filename: "wolftexture.tif"
+		RelativeFilename: "..\TheLostLevelsContent\wolftexture.tif"
 	}
 	Texture: "Texture::WOLF_TIF", "TextureVideoClip" {
 		Type: "TextureVideoClip"

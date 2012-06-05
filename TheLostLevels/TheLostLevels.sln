@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLostLevels", "TheLostLevels\TheLostLevels\TheLostLevels.csproj", "{9622D83E-F710-4B2A-B689-F273B20EDCA7}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "TheLostLevelsContent", "TheLostLevels\TheLostLevelsContent\TheLostLevelsContent.contentproj", "{30A0ABF3-7A88-4C17-A0B6-1E3B5D3A400D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLostLevelsContent", "TheLostLevels\TheLostLevelsContent\TheLostLevelsContent.contentproj", "{30A0ABF3-7A88-4C17-A0B6-1E3B5D3A400D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

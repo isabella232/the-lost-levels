@@ -29,14 +29,14 @@ namespace TheLostLevels
               
         
 
-        public Game1 TheLostLevelsGame;
+        public TheLostLevelsGame TheLostLevelsGame;
 
         private List<CustomModel> TheModels; //models placed on the map
 
         
         public enum GameEffect
         { GROUND_PLANE };
-        public Level(Game1 thisGame,string LevelFile)
+        public Level(TheLostLevelsGame thisGame,string LevelFile)
             : base(thisGame)
         {
             myMap = new TileMap("", thisGame);

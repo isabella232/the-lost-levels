@@ -23,15 +23,15 @@ namespace TheLostLevels
         public Level CurrentLevel;
         //will be eventually read in from properties file as height the object will be drawn at in y axis (i.e. up)
         public float heightabove = 2;
-        private Game1 TheLostLevelsGame;
-        PathFinder PlayerPathFinder;
-        public Player(Game1 g, Vector2 position,Level level)
+        private TheLostLevelsGame TheLostLevelsGame;
+       // PathFinder PlayerPathFinder;
+        public Player(TheLostLevelsGame g, Vector2 position,Level level)
             : base(g)
         {
             Position = position;
             TheLostLevelsGame = g;
             CurrentLevel = level;
-            PlayerPathFinder = new PathFinder();
+            //PlayerPathFinder = new PathFinder();
         }
 
         
