@@ -34,7 +34,7 @@ public class PathFinder
 
 
     // findPath essentially does a BFS on a graph while "building" it
-    // start and ened should have parent=null
+    // start and end should have parent=null
     public static List<BFSNode> findPath(int[][] matrix, BFSNode start, BFSNode end)
     {
         // Initializing Data Structures
