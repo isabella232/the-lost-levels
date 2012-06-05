@@ -1,0 +1,8 @@
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TestModel\TestModel\TestModel\bin\x86\Debug\Content\Cube.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TestModel\TestModel\TestModel\bin\x86\Debug\TestModel.exe
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TestModel\TestModel\TestModel\bin\x86\Debug\TestModel.pdb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TestModel\TestModel\TestModel\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TestModel\TestModel\TestModel\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TestModel\TestModel\TestModel\obj\x86\Debug\TestModel.exe
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TestModel\TestModel\TestModel\obj\x86\Debug\TestModel.pdb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TestModel\TestModel\TestModel\bin\x86\Debug\Content\guy.xnb

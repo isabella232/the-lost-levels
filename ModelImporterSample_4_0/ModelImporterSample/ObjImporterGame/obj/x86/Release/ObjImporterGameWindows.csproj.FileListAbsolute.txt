@@ -1,0 +1,9 @@
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\Content\Tank.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\Content\turret_alt_diff_tex_small_0.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\Content\engine_diff_tex_small_0.xnb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\ObjImporterSample.exe
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\ObjImporterSample.pdb
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\obj\x86\Release\ObjImporterSample.exe
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\obj\x86\Release\ObjImporterSample.pdb

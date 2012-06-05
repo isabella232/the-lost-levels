@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Tank.obj</Source>
+      <Name>Tank</Name>
+      <Importer>ObjImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\Content\Tank.xnb</Output>
+      <Time>2010-10-02T17:33:28-05:00</Time>
+      <Dependency>
+        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\obj\x86\Release\Tank_0.xml</Key>
+        <Value>2012-06-04T16:34:15.6079094-05:00</Value>
+      </Dependency>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\Content\turret_alt_diff_tex_small_0.xnb</Request>
+      <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\Content\engine_diff_tex_small_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Tank.obj</Source>
+      <Importer>ObjImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\obj\x86\Release\Tank_0.xml</Output>
+      <Time>2010-10-02T17:33:28-05:00</Time>
+      <Dependency>
+        <Key>Tank.mtl</Key>
+        <Value>2010-10-02T17:33:28-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>turret_alt_diff_tex_small.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\Content\turret_alt_diff_tex_small_0.xnb</Output>
+      <Time>2010-10-02T17:33:28-05:00</Time>
+    </Item>
+    <Item>
+      <Source>engine_diff_tex_small.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\Content\engine_diff_tex_small_0.xnb</Output>
+      <Time>2010-10-02T17:33:28-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{DB68E246-A749-4C1F-9914-4771D08CC293}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\bin\x86\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporter\bin\x86\Release\ObjImporter.dll</Key>
+        <Value>2012-06-04T16:34:11.1136523-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-03-28T11:03:39.989994-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

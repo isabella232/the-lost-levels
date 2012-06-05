@@ -1,0 +1,1 @@
+C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\ModelImporterSample_4_0\ModelImporterSample\ObjImporterGame\Content\obj\x86\Release\ResolveAssemblyReference.cache
