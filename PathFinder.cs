@@ -106,7 +106,7 @@ public class PathFinder
         return new List<BFSNode>();
     }
 
-    private static List<BFSNode> getPath(BFSNode end)
+    private List<BFSNode> getPath(BFSNode end)
     {
         List<BFSNode> path = new List<BFSNode>();
         BFSNode curr = end;
