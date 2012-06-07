@@ -75,6 +75,14 @@ namespace TheLostLevels
             {
                 Texture2D texture = null;
                 int i=0;
+                if(ModelName=="tree")
+                {
+                    diffuseColor = new Vector4(0, 1, 0, 0);
+                }
+                else if(ModelName == "well" || ModelName == "guy")
+                {
+                    diffuseColor = new Vector4(0.643f,0.164f,0.164f,0.0f);
+                }
                 foreach (ModelMesh mesh in TheModel.Meshes)
                 {
                                       
@@ -92,7 +100,7 @@ namespace TheLostLevels
                             * Matrix.CreateRotationX(MathHelper.ToRadians(Properties[3]))
                             * Matrix.CreateRotationY(MathHelper.ToRadians(Properties[4]))
                             * Matrix.CreateRotationZ(MathHelper.ToRadians(Properties[5]))
-                            * Matrix.CreateTranslation(Position+ new Vector3(0, 2, 0)+ new Vector3(Properties[6], Properties[7], Properties[8]));
+                            * Matrix.CreateTranslation(Position + new Vector3(0, 2, 0) + new Vector3(Properties[6], Properties[7], Properties[8]) + new Vector3(-1f, 0f, -1f));
                         celEffect.Parameters["World"].SetValue(worldT);
                         celEffect.Parameters["WorldInverseTranspose"].SetValue((Matrix.Invert(worldT)));
                         celEffect.Parameters["View"].SetValue(cam.ViewMatrix);
@@ -147,10 +155,14 @@ namespace TheLostLevels
         /// Allows the game component to update itself.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
-
+        /// 
+        private double timeelapsed = 0;
 
         public override void Update(GameTime gameTime)
         {
+            
+
+            
 
 
             base.Update(gameTime);

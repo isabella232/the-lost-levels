@@ -31,7 +31,7 @@ namespace TheLostLevels
 
         public TheLostLevelsGame TheLostLevelsGame;
 
-        private List<CustomModel> TheModels; //models placed on the map
+        public List<CustomModel> TheModels; //models placed on the map
 
         
         public enum GameEffect
@@ -89,7 +89,6 @@ namespace TheLostLevels
 
         public override void Initialize()
         {
-            LoadContent();
             base.Initialize();
         }
 
@@ -108,10 +107,125 @@ namespace TheLostLevels
 
         }
 
+        private double timeelapsed = 0;
         public override void Update(GameTime gameTime)
         {
             Effects[(int)GameEffect.GROUND_PLANE].World = TheLostLevelsGame.gameCamera.ViewMatrix;
             MouseState st = Mouse.GetState();
+
+
+
+
+
+
+
+
+
+            timeelapsed = timeelapsed + gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            foreach (var amodel in TheModels)
+            {
+                if (amodel.ModelName == "wolf")
+                {
+                    if (timeelapsed >125)
+                    {
+                        timeelapsed = 0;
+
+                        Random randomnum = new Random();
+
+                        double num = randomnum.NextDouble();
+
+
+
+                        if (num < .25)
+                        {
+                            var querypos = new Vector3(amodel.Position.X + Tile.TileWidth, amodel.Position.Y, amodel.Position.Z);
+
+                            bool openpos = true;
+
+                            foreach (var x in TheModels)
+                            {
+                                if ((x.Position == querypos) && (x.ModelName != "guy"))
+                                {
+                                    openpos = false;
+                                }
+                            }
+
+                            if (openpos == true)
+                            {
+                                amodel.Position = querypos;
+                            }
+                        }
+                        else if (num < .5)
+                        {
+                            var querypos = new Vector3(amodel.Position.X - Tile.TileWidth, amodel.Position.Y, amodel.Position.Z);
+
+                            bool openpos = true;
+
+                            foreach (var x in TheModels)
+                            {
+                                if ((x.Position == querypos) && (x.ModelName != "guy"))
+                                {
+                                    openpos = false;
+                                }
+                            }
+
+                            if (openpos == true)
+                            {
+                                amodel.Position = querypos;
+                            }
+                        }
+                        else if (num < .75)
+                        {
+                            var querypos = new Vector3(amodel.Position.X, amodel.Position.Y, amodel.Position.Z + Tile.TileWidth);
+
+                            bool openpos = true;
+
+                            foreach (var x in TheModels)
+                            {
+                                if ((x.Position == querypos) && (x.ModelName != "guy"))
+                                {
+                                    openpos = false;
+                                }
+                            }
+
+                            if (openpos == true)
+                            {
+                                amodel.Position = querypos;
+                            }
+                        }
+                        else
+                        {
+                            var querypos = new Vector3(amodel.Position.X, amodel.Position.Y, amodel.Position.Z - Tile.TileWidth);
+
+                            bool openpos = true;
+
+                            foreach (var x in TheModels)
+                            {
+                                if ((x.Position == querypos) && (x.ModelName != "guy"))
+                                {
+                                    openpos = false;
+                                }
+                            }
+
+                            if (openpos == true)
+                            {
+                                amodel.Position = querypos;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+
+
+            foreach(var x in TheModels)
+            {
+                x.Update(gameTime);
+            }
+
             base.Update(gameTime);
         }
         public override void Draw(GameTime gameTime)

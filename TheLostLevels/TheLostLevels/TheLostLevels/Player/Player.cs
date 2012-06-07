@@ -77,41 +77,43 @@ namespace TheLostLevels
             MouseState st = Mouse.GetState();
 
 
-            if (st.RightButton == ButtonState.Pressed)
-            {
-                Vector3 dir;
-                Vector3 pt1 = new Vector3(st.X, st.Y, 1);
-                Vector3 pt2 = new Vector3(st.X, st.Y, 500);
-                Vector3 minPointSource = GraphicsDevice.Viewport.Unproject(pt1
-                    , TheLostLevelsGame.gameCamera.Projection
-                    , TheLostLevelsGame.gameCamera.ViewMatrix, Matrix.Identity);
+            //if (st.RightButton == ButtonState.Pressed)
+            //{
+            //    Vector3 dir;
+            //    Vector3 pt1 = new Vector3(st.X, st.Y, 1);
+            //    Vector3 pt2 = new Vector3(st.X, st.Y, 500);
+            //    Vector3 minPointSource = GraphicsDevice.Viewport.Unproject(pt1
+            //        , TheLostLevelsGame.gameCamera.Projection
+            //        , TheLostLevelsGame.gameCamera.ViewMatrix, Matrix.Identity);
 
-                Vector3 maxPointsource = GraphicsDevice.Viewport.Unproject
-                    (pt2
-                    , TheLostLevelsGame.gameCamera.Projection
-                    , TheLostLevelsGame.gameCamera.ViewMatrix
-                    , Matrix.Identity);
+            //    Vector3 maxPointsource = GraphicsDevice.Viewport.Unproject
+            //        (pt2
+            //        , TheLostLevelsGame.gameCamera.Projection
+            //        , TheLostLevelsGame.gameCamera.ViewMatrix
+            //        , Matrix.Identity);
 
-                dir = maxPointsource - minPointSource;
-                dir.Normalize();
+            //    dir = maxPointsource - minPointSource;
+            //    dir.Normalize();
 
-                float t = -maxPointsource.Y / dir.Y;
-                Vector3 pointToGo = new Vector3(maxPointsource.X + t * dir.X, 0.0f, maxPointsource.Z + t * dir.Z);
-                //TODO: Debug Pathfinder
-                //int[,] matrix = new int[TileMap.MapWidth,TileMap.MapHeight];
+            //    float t = -maxPointsource.Y / dir.Y;
+            //    Vector3 pointToGo = new Vector3(maxPointsource.X + t * dir.X, 0.0f, maxPointsource.Z + t * dir.Z);
+            //    //TODO: Debug Pathfinder
+            //    //int[,] matrix = new int[TileMap.MapWidth,TileMap.MapHeight];
                 
-                //Microsoft.Xna.Framework.Point srcTile = TileMap.GetTileIndex(new Vector3(Position.X,0,Position.Y));
-                //Microsoft.Xna.Framework.Point destTile = TileMap.GetTileIndex(pointToGo);
-                //Point startTile = new Point((int)srcTile.X, (int)srcTile.Y, null);
-                //Point endTile = new Point((int)destTile.X,(int)destTile.Y,null);
-                //List<Point> pt = PathFinder.findPath(matrix, startTile, endTile);
-                Microsoft.Xna.Framework.Point tileOnMap = TileMap.GetTileIndex(pointToGo);
-                Rectangle playerNextRectangle = Tile.GetSourceRectangle(new Vector2(tileOnMap.X,tileOnMap.Y));
+            //    //Microsoft.Xna.Framework.Point srcTile = TileMap.GetTileIndex(new Vector3(Position.X,0,Position.Y));
+            //    //Microsoft.Xna.Framework.Point destTile = TileMap.GetTileIndex(pointToGo);
+            //    //Point startTile = new Point((int)srcTile.X, (int)srcTile.Y, null);
+            //    //Point endTile = new Point((int)destTile.X,(int)destTile.Y,null);
+            //    //List<Point> pt = PathFinder.findPath(matrix, startTile, endTile);
+            //    Microsoft.Xna.Framework.Point tileOnMap = TileMap.GetTileIndex(pointToGo);
+            //    Rectangle playerNextRectangle = Tile.GetSourceRectangle(new Vector2(tileOnMap.X,tileOnMap.Y));
 
-                Microsoft.Xna.Framework.Point center = playerNextRectangle.Center;
-                Position = new Vector2(center.X,center.Y);
-                Guy.Position = new Vector3(Position.X, 0, Position.Y);
-            }
+            //    Microsoft.Xna.Framework.Point center = playerNextRectangle.Center;
+            //    Position = new Vector2(center.X,center.Y);
+            //    Guy.Position = new Vector3(Position.X, 0, Position.Y);
+            //}
+
+            
             base.Update(gameTime);
         }
     }

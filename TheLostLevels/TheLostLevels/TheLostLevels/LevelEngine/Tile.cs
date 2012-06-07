@@ -19,8 +19,8 @@ namespace TheLostLevels
         
         static public Rectangle GetSourceRectangle(Vector2 tilePoint)
         {
-            int tileX = (int)tilePoint.X * 2;
-            int tileY = (int)tilePoint.Y * 2;
+            int tileX = (int)tilePoint.X ;
+            int tileY = (int)tilePoint.Y ;
 
             return new Rectangle(tileX, tileY, TileWidth, TileHeight);
         }

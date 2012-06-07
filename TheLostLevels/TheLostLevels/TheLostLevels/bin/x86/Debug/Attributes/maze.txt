@@ -236,8 +236,6 @@ tree 91 99
 tree 95 99
 tree 93 99
 tree 97 99
-guy 3 3
-guy -11 -13
 tree 5 3
 tree 5 5
 tree 5 7

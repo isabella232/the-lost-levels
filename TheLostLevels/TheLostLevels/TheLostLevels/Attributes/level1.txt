@@ -58,3 +58,4 @@ tree 35 9
 tree 33 25
 tree 31 27
 tree 25 35
+wolf 25 25
