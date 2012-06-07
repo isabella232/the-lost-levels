@@ -24,6 +24,12 @@ public class BFSNode
             st += (int)c;
         return Int32.Parse(st);
     }
+
+    public override String ToString()
+    {
+        String s = x + ", " + y;
+        return s;
+    }
 }
 
 
@@ -126,3 +132,27 @@ public class PathFinder
     }
 
 }
+/*
+class Tester
+{
+    public static void Main()
+    {
+        int[][] matrix = new int[5][];
+        matrix[0] = new int[] { 1, 1, 1, 1, 0 };
+        matrix[1] = new int[] { 1, 0, 0, 1, 0 };
+        matrix[2] = new int[] { 0, 1, 0, 1, 0 };
+        matrix[3] = new int[] { 0, 1, 0, 1, 0 };
+        matrix[4] = new int[] { 0, 0, 0, 0, 0 };
+
+        BFSNode start = new BFSNode(2, 1, null);
+        BFSNode end = new BFSNode(2, 3, null);
+        List<BFSNode> path = PathFinder.findPath(matrix, start, end);
+
+
+        System.Diagnostics.Debug.WriteLine("STARTING");
+        foreach (BFSNode b in path)
+            System.Diagnostics.Debug.WriteLine(b);
+    }
+
+}
+*/
