@@ -2,59 +2,38 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using New2DRPG.CoreComponents;
+using TheLostLevels.Components;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-
+namespace TheLostLevels
+{
     class StartScreen : GameScreen
     {
-        ButtonMenu buttonMenu;
-        SpriteFont spriteFont;
-        Texture2D background;
-        Texture2D buttonImage;
-
-        public StartScreen(Game game) 
+        MenuComponent menu;
+        public StartScreen(Game game, SpriteFont spriteFont,
+        Texture2D background, SpriteBatch stuff)
             : base(game)
         {
-            LoadContent();
-            Components.Add(new BackgroundComponent(game, background, true));
-
-            string[] items = { "START", 
-                                 "STOP", 
-                                 "HELP",  
-                                 "QUIT" };
-
-            buttonMenu = new ButtonMenu(
-                game,
-                spriteFont,
-                buttonImage);
-
-            buttonMenu.SetMenuItems(items);
-            Components.Add(buttonMenu);
+            Components.Add(new BackgroundComponent(game, background));
+            string[] items = { "Play","Help", "Quit" };
+            menu = new MenuComponent(game, spriteFont, stuff);
+            menu.SetMenuItems(items);
+            Components.Add(menu);
         }
-
         public int SelectedIndex
         {
-            get { return buttonMenu.SelectedIndex; }
-        }
-
-        protected override void LoadContent()
-        {
-            background = Content.Load<Texture2D>();//insert file path
-            buttonImage = Content.Load<Texture2D>(); //image 
-            spriteFont = Content.Load<SpriteFont>();//font
-            base.LoadContent();
+            get { return menu.SelectedIndex; }
         }
         public override void Show()
         {
-            buttonMenu.Position = new Vector2((Game.Window.ClientBounds.Width -
-                                        buttonMenu.Width) / 2, 450);
+            menu.Position = new Vector2(
+            (Game.Window.ClientBounds.Width - menu.Width) / 2, 330);
             base.Show();
         }
-
         public override void Hide()
         {
             base.Hide();
         }
     }
+}
