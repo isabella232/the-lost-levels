@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>RootNode</Name>
     <Identity>
-      <SourceFilename>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
+      <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -4451,7 +4451,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Mat_0__w1_jpg</Name>
       <Identity>
-        <SourceFilename>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
+        <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -4472,7 +4472,7 @@
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Name>Mat_1__cs_jpg</Name>
       <Identity>
-        <SourceFilename>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
+        <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -4493,7 +4493,7 @@
     <Resource ID="#Resource3" Type="Graphics:BasicMaterialContent">
       <Name>Mat_5__d49_jpg</Name>
       <Identity>
-        <SourceFilename>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
+        <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -4514,7 +4514,7 @@
     <Resource ID="#Resource4" Type="Graphics:BasicMaterialContent">
       <Name>Mat_2__door16_jpg</Name>
       <Identity>
-        <SourceFilename>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
+        <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -4535,7 +4535,7 @@
     <Resource ID="#Resource5" Type="Graphics:BasicMaterialContent">
       <Name>Mat_4__w2_jpg</Name>
       <Identity>
-        <SourceFilename>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
+        <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -4556,7 +4556,7 @@
     <Resource ID="#Resource6" Type="Graphics:BasicMaterialContent">
       <Name>Mat_4__w2_jpg</Name>
       <Identity>
-        <SourceFilename>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
+        <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -4577,7 +4577,7 @@
     <Resource ID="#Resource7" Type="Graphics:BasicMaterialContent">
       <Name>Mat_3__cr_jpg</Name>
       <Identity>
-        <SourceFilename>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
+        <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -4598,7 +4598,7 @@
     <Resource ID="#Resource8" Type="Graphics:BasicMaterialContent">
       <Name>Mat_6__w10_jpg</Name>
       <Identity>
-        <SourceFilename>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
+        <SourceFilename>D:\College-classes\spring 2012 classes\EECS 395 Game Engine Design\Project 2\TheLostLevels\TheLostLevels\TheLostLevelsContent\windmill.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
