@@ -1497,3 +1497,4 @@ tree 73 69
 tree 75 69
 tree 77 69
 tree 75 71
+wolf 3 3
