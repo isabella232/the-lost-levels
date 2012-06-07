@@ -10,9 +10,9 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.GamerServices;
-using BTBD.ScreenManager;
+using TheLostLevels.ScreenManager;
 
-namespace BTBD.GameScreens
+namespace TheLostLevels.GameScreens
 {
 
     public class MainGameScreen : GameScreen
@@ -53,7 +53,7 @@ namespace BTBD.GameScreens
             // TODO: use this.Content to load your game content here
             LoadLevel();
 
-            player = new Player();
+           // player = new Player();
             keyboardState = Keyboard.GetState();
         }
 
@@ -64,16 +64,16 @@ namespace BTBD.GameScreens
                 level.Dispose();
 
             // Load the level.
-            level = new Level();
-            level.LoadContent();
+            //level = new Level();
+           // level.LoadContent();
         }
 
         public override void Update(GameTime gameTime, bool hasFocus, bool isCovered)
         {
             if (isPaused == false)
             {
-                level.Update();
-                player.Update();
+               // level.Update();
+              //  player.Update();
             }
 
         }

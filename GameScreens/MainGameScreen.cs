@@ -10,9 +10,9 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.GamerServices;
-using BTBD.ScreenManager;
+using TheLostLevels.ScreenManager;
 
-namespace BTBD.GameScreens
+namespace TheLostLevels.GameScreens
 {
 
     public class MainGameScreen : GameScreen

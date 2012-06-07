@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using BTBD.ScreenManager;
+using TheLostLevels.ScreenManager;
 
-namespace BTBD.GameScreens
+namespace TheLostLevels.GameScreens
 {
     class MenuItem
     {

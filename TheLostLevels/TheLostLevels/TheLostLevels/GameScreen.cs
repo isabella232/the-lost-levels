@@ -1,71 +1,211 @@
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Input;
 
-namespace ScreenManager
+namespace TheLostLevels.ScreenManager
 {
-    public abstract class GameScreen :
-  Microsoft.Xna.Framework.DrawableGameComponent
+    public enum ScreenState
     {
-        List<GameComponent> components = new List<GameComponent>();
-        protected Game game;
-        protected SpriteBatch spriteBatch;
-        public List<GameComponent> Components
+        TransitionToOn,
+        Active,
+        TransitionToOff,
+        Hidden
+    }
+
+    public abstract class GameScreen
+    {
+        public virtual bool isPaused
         {
-            get { return components; }
+            get { return paused; }
+            set { paused = value; }
         }
-        public GameScreen(Game game, SpriteBatch spriteBatch)
-            : base(game)
+        private bool paused;
+
+        public Model LoadModel(string assetName)
         {
-            this.game = game;
-            this.spriteBatch = spriteBatch;
+
+            Model newModel = this.ScreenManager.Game.Content.Load<Model>(assetName); foreach (ModelMesh mesh in newModel.Meshes)
+                foreach (ModelMeshPart meshPart in mesh.MeshParts)
+                    meshPart.Effect = this.myEffect.Clone();
+            return newModel;
         }
-        public override void Initialize()
+
+        public Model LoadModel(string assetName, out Texture2D[] textures)
         {
-            base.Initialize();
+
+            Model newModel = this.ScreenManager.Game.Content.Load<Model>(assetName);
+            textures = new Texture2D[newModel.Meshes.Count];
+            int i = 0;
+            foreach (ModelMesh mesh in newModel.Meshes)
+                foreach (Effect currentEffect in mesh.Effects)
+                {
+                    BasicEffect b = currentEffect as BasicEffect;
+                    if(b != null)
+                        textures[i++] = b.Texture;
+                }
+                    
+
+            foreach (ModelMesh mesh in newModel.Meshes)
+                foreach (ModelMeshPart meshPart in mesh.MeshParts)
+                    meshPart.Effect = this.myEffect.Clone();
+
+            return newModel;
         }
-        public override void Update(GameTime gameTime)
+        public ScreenState ScreenState
         {
-            base.Update(gameTime);
-            foreach (GameComponent component in components)
-                if (component.Enabled == true)
-                    component.Update(gameTime);
+            get { return screenState; }
+            protected set { screenState = value; }
         }
-        public override void Draw(GameTime gameTime)
+
+        ScreenState screenState = ScreenState.TransitionToOn;
+
+        public bool IsExiting
         {
-            base.Draw(gameTime);
-            foreach (GameComponent component in components)
-                if (component is DrawableGameComponent &&
-                    ((DrawableGameComponent)component).Visible)
-                    ((DrawableGameComponent)component).Draw(gameTime);
+            get { return isExiting; }
+            protected internal set { isExiting = value; }
         }
-        public virtual void Show()
+
+        public Song bgSong;
+        bool isExiting = false;
+
+        public bool IsActive
         {
-            this.Visible = true;
-            this.Enabled = true;
-            foreach (GameComponent component in components)
+            get { return !hasFocus && (screenState == ScreenState.TransitionToOn || screenState == ScreenState.Active); }
+        }
+
+        public float TransitionAlpha
+        {
+            get { return 1f - TransitionPosition; }
+        }
+
+        public ScreenManager ScreenManager
+        {
+            get { return screenManager; }
+            internal set { screenManager = value; }
+        }
+
+        ScreenManager screenManager;
+
+        //location of transition
+        public float TransitionPosition
+        {
+            get { return transitionPosition; }
+            protected set { transitionPosition = value; }
+        }
+
+        float transitionPosition = 1;
+
+        //time to transition off
+        public TimeSpan TransitionOffTime
+        {
+            get { return transitionOffTime; }
+            protected set { transitionOffTime = value; }
+        }
+
+        //time to transition on 
+        public TimeSpan TransitionOnTime
+        {
+            get { return transitionOnTime; }
+            protected set { transitionOnTime = value; }
+        }
+
+        TimeSpan transitionOnTime = TimeSpan.Zero;
+
+        TimeSpan transitionOffTime = TimeSpan.Zero;
+
+        public virtual void Update(GameTime gameTime, bool hasFocus, bool isCovered)
+        {
+
+            this.hasFocus = hasFocus;
+            if (isExiting)
             {
-                component.Enabled = true;
-                if (component is DrawableGameComponent)
-                    ((DrawableGameComponent)component).Visible = true;
+                screenState = ScreenState.TransitionToOff;
+                if (!UpdateTransition(gameTime, transitionOffTime, 1))
+                {
+                    // When the transition finishes, remove the screen.
+                    ScreenManager.RemoveScreen(this);
+                }
+            }
+            if (isCovered)
+            {
+                if (UpdateTransition(gameTime, transitionOffTime, 1))
+                {
+                    // Still busy transitioning.
+                    screenState = ScreenState.TransitionToOff;
+                }
+                else
+                {
+                    // Transition finished!
+                    screenState = ScreenState.Hidden;
+                }
+            }
+            else
+            {
+                // Otherwise the screen should transition on and become active.
+                if (UpdateTransition(gameTime, transitionOnTime, -1))
+                {
+                    // Still busy transitioning.
+                    screenState = ScreenState.TransitionToOn;
+                }
+                else
+                {
+                    // Transition finished!
+                    screenState = ScreenState.Active;
+                }
             }
         }
-        public virtual void Hide()
+
+
+        bool UpdateTransition(GameTime gameTime, TimeSpan time, int direction)
         {
-            this.Visible = false;
-            this.Enabled = false;
-            foreach (GameComponent component in components)
+
+            float transitionDelta;
+
+            if (time == TimeSpan.Zero)
+                transitionDelta = 1;
+            else
+                transitionDelta = (float)(gameTime.ElapsedGameTime.TotalMilliseconds /
+                                          time.TotalMilliseconds);
+
+            // Update the transition position.
+            transitionPosition += transitionDelta * direction;
+
+            // Did we reach the end of the transition?
+            if (((direction < 0) && (transitionPosition <= 0)) ||
+                ((direction > 0) && (transitionPosition >= 1)))
             {
-                component.Enabled = false;
-                if (component is DrawableGameComponent)
-                    ((DrawableGameComponent)component).Visible = false;
+                transitionPosition = MathHelper.Clamp(transitionPosition, 0, 1);
+                return false;
             }
+
+            // Otherwise we are still busy transitioning.
+            return true;
+        }
+
+        public Effect myEffect;
+        public bool hasFocus;
+        //load all graphics for screen
+        public virtual void LoadContent() { }
+
+        //unload graphics for the screen
+        public virtual void UnloadContent() { }
+
+        public virtual void HandleInput(InputState input) { }
+
+        public virtual void Draw(GameTime gameTime) { }
+
+
+
+        public void Exit()
+        {
+            ScreenManager.RemoveScreen(this);
         }
     }
 }

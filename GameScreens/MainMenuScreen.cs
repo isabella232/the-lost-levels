@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-//using Microsoft.Xna.Framework.Storage;
+using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
 using System.IO;
 using System.Xml.Serialization;
 
-namespace BTBD.GameScreens
+namespace TheLostLevels.GameScreens
 {
     class MainMenuScreen : MenuScreen
     {
@@ -30,7 +30,7 @@ namespace BTBD.GameScreens
             quit.Selected += OnCancel;
             
             play.Position = new Vector2(Game1.WIDTH / 2f - 20, 500);
-            options.Position = new Vector2(Game1.WIDTH / 2f - 20, 540;
+            options.Position = new Vector2(Game1.WIDTH / 2f - 20, 540);
             quit.Position = new Vector2(Game1.WIDTH / 2f - 20, 580);
             logoPosition = new Vector2(Game1.WIDTH / 2, 0);
             MenuItems.Add(play);

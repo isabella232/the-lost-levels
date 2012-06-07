@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Media;
 using System.IO;
 using System.Xml.Serialization;
 
-namespace BTBD.GameScreens
+namespace TheLostLevels.GameScreens
 {
     class MainMenuScreen : MenuScreen
     {
@@ -29,10 +29,10 @@ namespace BTBD.GameScreens
             options.Selected += InstructionsItemSelected;
             quit.Selected += OnCancel;
             
-            play.Position = new Vector2(Game1.WIDTH / 2f - 20, 500);
-            options.Position = new Vector2(Game1.WIDTH / 2f - 20, 540;
-            quit.Position = new Vector2(Game1.WIDTH / 2f - 20, 580);
-            logoPosition = new Vector2(Game1.WIDTH / 2, 0);
+            play.Position = new Vector2(380, 500); 
+            options.Position = new Vector2(380, 540);
+            quit.Position = new Vector2(380, 580);
+            logoPosition = new Vector2(400, 0);
             MenuItems.Add(play);
             MenuItems.Add(options);
             MenuItems.Add(quit);
@@ -41,7 +41,7 @@ namespace BTBD.GameScreens
         void InstructionsItemSelected(object sender, EventArgs e)
         {
             this.Exit();
-            ScreenManager.AddScreen(new InstructionScreen());
+          //  ScreenManager.AddScreen(new InstructionScreen());
         }
 
         void PlayMenuItemSelected(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace BTBD.GameScreens
             SpriteFont font = ScreenManager.SpriteFont;
             Texture2D menuBackground = ScreenManager.Game.Content.Load<Texture2D>("Sprites/MenuBG");
             spriteBatch.Begin();
-            spriteBatch.Draw(menuBackground, new Vector2(Game1.WIDTH / 2 - menuBackground.Width / 2, 0), Color.White);
+            spriteBatch.Draw(menuBackground, new Vector2(400 - menuBackground.Width / 2, 0), Color.White);
 
             MenuItem item;
             for (int i = 0; i < MenuItems.Count; ++i)
