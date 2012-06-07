@@ -14,6 +14,7 @@ namespace TheLostLevels
         public Tile[,] tiles;
         static public int MapWidth = 50;
         static public int MapHeight = 50;
+        
         Game thisGame;
         public TileMap(string MapFilePath, Game g)
         {

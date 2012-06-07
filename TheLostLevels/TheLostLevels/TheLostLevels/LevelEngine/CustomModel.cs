@@ -38,38 +38,88 @@ namespace TheLostLevels
 
         public Vector3 Position { get; set; }
 
-        public void Draw(GameTime gameTime, GraphicsDevice graphics,Camera cam)
+        public void Draw(GameTime gameTime, GraphicsDevice graphics,Camera cam, Effect celEffect)
         {
-            Matrix[] transforms = new Matrix[TheModel.Bones.Count];
-            float aspectRatio = graphics.Viewport.AspectRatio;
-            TheModel.CopyAbsoluteBoneTransformsTo(transforms);
-            Matrix projection = cam.Projection;
-            Matrix view = cam.ViewMatrix;
-
-            
-            foreach (ModelMesh mesh in TheModel.Meshes)
+            if (celEffect==null)
             {
-                foreach (BasicEffect effect in mesh.Effects)
+                Matrix[] transforms = new Matrix[TheModel.Bones.Count];
+                float aspectRatio = graphics.Viewport.AspectRatio;
+                TheModel.CopyAbsoluteBoneTransformsTo(transforms);
+                Matrix projection = cam.Projection;
+                Matrix view = cam.ViewMatrix;
+
+
+                foreach (ModelMesh mesh in TheModel.Meshes)
                 {
-                    effect.EnableDefaultLighting();
-                    effect.View = view;
-                    effect.Projection = projection;
-                    effect.World = transforms[mesh.ParentBone.Index]
-                        * Matrix.CreateScale(Properties[0], Properties[1], Properties[2])
-                        * Matrix.CreateRotationX(MathHelper.ToRadians(Properties[3]))
-                        * Matrix.CreateRotationY(MathHelper.ToRadians(Properties[4]))
-                        * Matrix.CreateRotationZ(MathHelper.ToRadians(Properties[5]))
-                        * Matrix.CreateTranslation(Position 
-                                                + new Vector3(0,2,0)
-                                                + new Vector3(Properties[6], Properties[7], Properties[8]));
-          
+                    foreach (BasicEffect effect in mesh.Effects)
+                    {
+                        
+                        effect.EnableDefaultLighting();
+                        effect.View = view;
+                        effect.Projection = projection;
+                        
+                        effect.World = transforms[mesh.ParentBone.Index]
+                            * Matrix.CreateScale(Properties[0], Properties[1], Properties[2])
+                            * Matrix.CreateRotationX(MathHelper.ToRadians(Properties[3]))
+                            * Matrix.CreateRotationY(MathHelper.ToRadians(Properties[4]))
+                            * Matrix.CreateRotationZ(MathHelper.ToRadians(Properties[5]))
+                            * Matrix.CreateTranslation(Position
+                                                    + new Vector3(0, 2, 0)
+                                                    + new Vector3(Properties[6], Properties[7], Properties[8]));
+
+                    }
+                    mesh.Draw();
                 }
-                mesh.Draw();
+            }
+            else
+            {
+                Texture2D texture = null;
+                int i=0;
+                foreach (ModelMesh mesh in TheModel.Meshes)
+                {
+                    
+                    
+                    
+
+                    foreach (ModelMeshPart part in mesh.MeshParts)
+                    {
+
+                        Vector3 x = part.Effect.Parameters["SpecularColor"].GetValueVector3();
+                        Vector3 y = new Vector3((float)RandomNumber(0, 100) / 100, (float)RandomNumber(0, 100) / 100, (float)RandomNumber(0, 100) / 100);
+                        Vector4 z = part.Effect.Parameters["DiffuseColor"].GetValueVector4();
+
+                        part.Effect = celEffect;
+                        
+                        Matrix worldT =mesh.ParentBone.Transform*Matrix.CreateScale(Properties[0], Properties[1], Properties[2])
+                            * Matrix.CreateRotationX(MathHelper.ToRadians(Properties[3]))
+                            * Matrix.CreateRotationY(MathHelper.ToRadians(Properties[4]))
+                            * Matrix.CreateRotationZ(MathHelper.ToRadians(Properties[5]))
+                            * Matrix.CreateTranslation(Position+ new Vector3(0, 2, 0)+ new Vector3(Properties[6], Properties[7], Properties[8]));
+                        celEffect.Parameters["World"].SetValue(worldT);
+                        celEffect.Parameters["WorldInverseTranspose"].SetValue((Matrix.Invert(worldT)));
+                        celEffect.Parameters["View"].SetValue(cam.ViewMatrix);
+                        celEffect.Parameters["Projection"].SetValue(cam.Projection);
+                        celEffect.Parameters["DiffuseColor"].SetValue(z);
+                        celEffect.Parameters["EmissiveColor"].SetValue(y);
+                        
+
+                    }
+                              
+                    
+                    mesh.Draw();
+                    i++;
+                }
             }
             
 
 
             base.Draw(gameTime);
+        }
+
+        private int RandomNumber(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max);
         }
 
 

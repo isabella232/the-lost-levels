@@ -124,7 +124,7 @@ namespace TheLostLevels
             {
                 c.Draw(gameTime
                     , TheLostLevelsGame.GraphicsDevice
-                    , TheLostLevelsGame.gameCamera);
+                    , TheLostLevelsGame.gameCamera,TheLostLevelsGame.celShader);
             }
             
             base.Draw(gameTime);

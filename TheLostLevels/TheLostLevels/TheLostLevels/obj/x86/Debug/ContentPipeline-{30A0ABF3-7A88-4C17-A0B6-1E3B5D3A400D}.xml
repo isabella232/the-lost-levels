@@ -302,6 +302,15 @@
       <Output>C:\Users\Matt\Desktop\Lost Levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
       <Time>2012-06-06T22:17:21.5502136-05:00</Time>
     </Item>
+    <Item>
+      <Source>Shader Effects\Toon.fx</Source>
+      <Name>Shader Effects\Toon</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\Shader Effects\Toon.xnb</Output>
+      <Time>2012-06-07T02:03:19.7249155-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{30A0ABF3-7A88-4C17-A0B6-1E3B5D3A400D}</ContentProjectGUID>

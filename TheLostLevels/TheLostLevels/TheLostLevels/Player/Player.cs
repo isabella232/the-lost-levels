@@ -39,12 +39,12 @@ namespace TheLostLevels
 
         public void Draw(GameTime gameTime,GraphicsDevice graphics,Camera gameCamera)
         {
-            Guy.Draw(gameTime, graphics, gameCamera);
+            //Guy.Draw(gameTime, graphics, gameCamera, celShader);
 
             base.Draw(gameTime);
         }
 
-
+        public Effect celShader;
         protected override void LoadContent()
         {
             float[] prop = new float[9];
@@ -56,7 +56,8 @@ namespace TheLostLevels
             Guy = new CustomModel(CurrentLevel
                   , new Vector3(center.X,0,center.Y)
                 , TheLostLevelsGame.Content.Load<Model>("guy"), prop,"guy");
-                
+            celShader = TheLostLevelsGame.Content.Load<Effect>("Shader Effects/Toon");
+            
             base.LoadContent();
         }
         /// <summary>
@@ -97,14 +98,7 @@ namespace TheLostLevels
 
                 float t = -maxPointsource.Y / dir.Y;
                 Vector3 pointToGo = new Vector3(maxPointsource.X + t * dir.X, 0.0f, maxPointsource.Z + t * dir.Z);
-                //TODO: Debug Pathfinder
-                //int[,] matrix = new int[TileMap.MapWidth,TileMap.MapHeight];
                 
-                //Microsoft.Xna.Framework.Point srcTile = TileMap.GetTileIndex(new Vector3(Position.X,0,Position.Y));
-                //Microsoft.Xna.Framework.Point destTile = TileMap.GetTileIndex(pointToGo);
-                //Point startTile = new Point((int)srcTile.X, (int)srcTile.Y, null);
-                //Point endTile = new Point((int)destTile.X,(int)destTile.Y,null);
-                //List<Point> pt = PathFinder.findPath(matrix, startTile, endTile);
                 Microsoft.Xna.Framework.Point tileOnMap = TileMap.GetTileIndex(pointToGo);
                 Rectangle playerNextRectangle = Tile.GetSourceRectangle(new Vector2(tileOnMap.X,tileOnMap.Y));
 
