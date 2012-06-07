@@ -141,7 +141,7 @@ namespace TheLostLevels
             {
                 move = Vector3.Cross(Target - Position, Vector3.Up);
                 move.Normalize();
-                MoveCamera(-move);
+                MoveCamera(-2*move);
             }
 
             if ((mouseState.LeftButton != ButtonState.Pressed)
@@ -150,7 +150,7 @@ namespace TheLostLevels
             {
                 move = Vector3.Cross(Target - Position, Vector3.Up);
                 move.Normalize();
-                MoveCamera(move);
+                MoveCamera(2*move);
             }
 
             if ((mouseState.LeftButton != ButtonState.Pressed)
@@ -161,7 +161,7 @@ namespace TheLostLevels
                 move = Target - Position;
                 move = new Vector3(move.X, 0, move.Z);
                 move.Normalize();
-                MoveCamera(move);
+                MoveCamera(2*move);
             }
 
             
@@ -173,7 +173,7 @@ namespace TheLostLevels
                 move = Target - Position;
                 move = new Vector3(move.X, 0, move.Z);
                 move.Normalize();
-                MoveCamera(-move);
+                MoveCamera(-2*move);
             }
                                   
             if (keyboardState.IsKeyDown(Keys.R))
