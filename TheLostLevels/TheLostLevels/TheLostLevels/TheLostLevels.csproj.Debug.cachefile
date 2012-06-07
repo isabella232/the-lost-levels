@@ -8,6 +8,7 @@ Content\enemy.xnb
 Content\well.xnb
 Content\windmill.xnb
 Content\textures\WOLF.xnb
+Content\SpriteFont1.xnb
 Content\wolftexture_0.xnb
 Content\w1_0.xnb
 Content\cs_0.xnb
@@ -16,7 +17,7 @@ Content\door16_0.xnb
 Content\w2_0.xnb
 Content\cr_0.xnb
 Content\w10_0.xnb
-Content\SpriteFont1.xnb
+Content\Shader Effects\Toon.xnb
 Content\Shader Effects\Toon.xnb
 Attributes\level1.txt
 Attributes\ModelProperties.txt

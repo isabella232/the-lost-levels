@@ -42,7 +42,10 @@ namespace TheLostLevels
             leftRectangle = new Rectangle(0, 0, 5, 600);
             rightRectangle = new Rectangle(795, 0, 5, 600);
         }
-
+        public Vector3 GetPosition()
+        {
+            return Position;
+        }
         
         Vector3 toSpherical(float r, float phi, float theta)
         //given spherical coordinates in radians find the point on x,y,z axes

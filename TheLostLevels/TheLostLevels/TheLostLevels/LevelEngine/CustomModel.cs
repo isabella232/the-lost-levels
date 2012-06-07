@@ -77,17 +77,15 @@ namespace TheLostLevels
                 int i=0;
                 foreach (ModelMesh mesh in TheModel.Meshes)
                 {
-                    
-                    
-                    
+                                      
 
                     foreach (ModelMeshPart part in mesh.MeshParts)
                     {
-
+                        
                         Vector3 x = part.Effect.Parameters["SpecularColor"].GetValueVector3();
-                        Vector3 y = new Vector3((float)RandomNumber(0, 100) / 100, (float)RandomNumber(0, 100) / 100, (float)RandomNumber(0, 100) / 100);
+     //                   Vector3 y = new Vector3((float)RandomNumber(0, 100) / 100, (float)RandomNumber(0, 100) / 100, (float)RandomNumber(0, 100) / 100);                   
+                        Vector3 y = part.Effect.Parameters["EmissiveColor"].GetValueVector3();
                         Vector4 z = part.Effect.Parameters["DiffuseColor"].GetValueVector4();
-
                         part.Effect = celEffect;
                         
                         Matrix worldT =mesh.ParentBone.Transform*Matrix.CreateScale(Properties[0], Properties[1], Properties[2])
@@ -99,9 +97,10 @@ namespace TheLostLevels
                         celEffect.Parameters["WorldInverseTranspose"].SetValue((Matrix.Invert(worldT)));
                         celEffect.Parameters["View"].SetValue(cam.ViewMatrix);
                         celEffect.Parameters["Projection"].SetValue(cam.Projection);
-                        celEffect.Parameters["DiffuseColor"].SetValue(z);
+                        //celEffect.Parameters["DiffuseColor"].SetValue(z);
                         celEffect.Parameters["EmissiveColor"].SetValue(y);
-                        
+                        celEffect.Parameters["SpecularColor"].SetValue(x);
+                        celEffect.Parameters["cameraPosition"].SetValue(cam.GetPosition());
 
                     }
                               
