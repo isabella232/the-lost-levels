@@ -21,7 +21,7 @@ namespace TheLostLevels
 
 
 
-        TileMap myMap;
+        public TileMap myMap;
 
         //declare here all the different models
         
@@ -76,6 +76,7 @@ namespace TheLostLevels
                     Vector2 toPut = new Vector2(onlynumbers[0], onlynumbers[1]);
                     Rectangle srcRectangle = Tile.GetSourceRectangle(toPut);
                     Microsoft.Xna.Framework.Point center = srcRectangle.Center;
+                    myMap.tilesWalkable[(int)onlynumbers[0],(int) onlynumbers[1]] = 1;
                     TheModels.Add(new CustomModel(this
                         , new Vector3(center.X,0,center.Y)
                         , TheLostLevelsGame.Content.Load<Model>(modelname)

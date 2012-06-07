@@ -118,31 +118,81 @@ namespace TheLostLevels
              
                     if (k_new.IsKeyDown(Keys.Down))
                     {
-                        if (!k_old.IsKeyDown(Keys.Down))
+                        Vector2 newPosition = new Vector2(Position.X, Position.Y + Tile.TileWidth);
+                        Boolean dontGo = false;
+                        foreach (CustomModel m in CurrentLevel.TheModels)
                         {
-                            Position = new Vector2(Position.X, Position.Y + Tile.TileWidth);
+                            if (m.ModelName != "wolf")
+                            {
+                                
+                                if (!k_old.IsKeyDown(Keys.Down) && (new Vector2(m.Position.X,m.Position.Z) == newPosition))
+                                {
+                                    dontGo = true;
+                                    break;
+                                }
+                            }
                         }
+                        if(!k_old.IsKeyDown(Keys.Down)&&!dontGo)
+                            Position = newPosition;
                     }
                     if (k_new.IsKeyDown(Keys.Up))
                     {
-                        if (!k_old.IsKeyDown(Keys.Up))
+                        Vector2 newPosition = new Vector2(Position.X, Position.Y - Tile.TileWidth);
+                        Boolean dontGo = false;
+                        foreach (CustomModel m in CurrentLevel.TheModels)
                         {
-                            Position = new Vector2(Position.X, Position.Y - Tile.TileWidth);
+                            if (m.ModelName != "wolf")
+                            {
+
+                                if (!k_old.IsKeyDown(Keys.Up) && (new Vector2(m.Position.X, m.Position.Z) == newPosition))
+                                {
+                                    dontGo = true;
+                                    break;
+                                }
+                            }
                         }
+                        if (!k_old.IsKeyDown(Keys.Up) && !dontGo)
+                            Position = newPosition;
+                        
                     }
                     if (k_new.IsKeyDown(Keys.Left))
                     {
-                        if (!k_old.IsKeyDown(Keys.Left))
+                        Vector2 newPosition = new Vector2(Position.X - Tile.TileWidth, Position.Y);
+                        Boolean dontGo = false;
+                        foreach (CustomModel m in CurrentLevel.TheModels)
                         {
-                            Position = new Vector2(Position.X - Tile.TileWidth, Position.Y);
+                            if (m.ModelName != "wolf")
+                            {
+
+                                if (!k_old.IsKeyDown(Keys.Left) && (new Vector2(m.Position.X, m.Position.Z) == newPosition))
+                                {
+                                    dontGo = true;
+                                    break;
+                                }
+                            }
                         }
+                        if (!k_old.IsKeyDown(Keys.Left) && !dontGo)
+                            Position = newPosition;
+                        
                     }
                     if (k_new.IsKeyDown(Keys.Right))
                     {
-                        if (!k_old.IsKeyDown(Keys.Right))
+                        Vector2 newPosition =  new Vector2(Position.X + Tile.TileWidth, Position.Y);
+                        Boolean dontGo = false;
+                        foreach (CustomModel m in CurrentLevel.TheModels)
                         {
-                            Position = new Vector2(Position.X + Tile.TileWidth, Position.Y);
+                            if (m.ModelName != "wolf")
+                            {
+
+                                if (!k_old.IsKeyDown(Keys.Right) && (new Vector2(m.Position.X, m.Position.Z) == newPosition))
+                                {
+                                    dontGo = true;
+                                    break;
+                                }
+                            }
                         }
+                        if (!k_old.IsKeyDown(Keys.Right) && !dontGo)
+                            Position = newPosition;
                     }
 
                     k_old = k_new;

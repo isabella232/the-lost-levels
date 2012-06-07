@@ -8,7 +8,7 @@ using RPGLibrary;
 
 namespace TheLostLevels
 {
-    class Tile 
+    public class Tile 
     {
         //static public Texture2D TileSetTexture;
         static public int TileWidth = 2;

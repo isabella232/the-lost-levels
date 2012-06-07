@@ -9,19 +9,19 @@ namespace TheLostLevels
 {
    
     
-    class TileMap 
+    public class TileMap 
     {
         public Tile[,] tiles;
         static public int MapWidth = 50;
         static public int MapHeight = 50;
-        
+        public int[,] tilesWalkable;
         Game thisGame;
         public TileMap(string MapFilePath, Game g)
         {
             thisGame = g;
             
             Vector3 startPoint = new Vector3(0.5f, 0, 0.5f);
-
+            tilesWalkable = new int[MapWidth*2, MapHeight*2];
             tiles = new Tile[MapHeight,MapWidth];
             
             Vector3 xoffset = new Vector3(0,0,Tile.TileWidth);

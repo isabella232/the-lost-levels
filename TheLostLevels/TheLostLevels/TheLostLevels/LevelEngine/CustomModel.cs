@@ -34,6 +34,7 @@ namespace TheLostLevels
             TheModel = model;
             Properties = properties;
             ModelName = modelName;
+            
         }
 
         public Vector3 Position { get; set; }
