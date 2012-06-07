@@ -293,6 +293,24 @@
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\w10_0.xnb</Output>
       <Time>2000-12-31T16:00:00-06:00</Time>
     </Item>
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2012-06-05T15:30:35.2037329-05:00</Time>
+    </Item>
+    <Item>
+      <Source>dragonwallpaper2.jpg</Source>
+      <Name>dragonwallpaper2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\dragonwallpaper2.xnb</Output>
+      <Time>2012-06-05T14:46:17.185703-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{30A0ABF3-7A88-4C17-A0B6-1E3B5D3A400D}</ContentProjectGUID>

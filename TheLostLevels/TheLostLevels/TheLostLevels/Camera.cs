@@ -60,14 +60,14 @@ namespace TheLostLevels
             //my code
             center = new Vector3(5, 0, 5);
             //center = new Vector3(0, 0, 0);
-            radius = 15;
+            radius = 30;
             phi = MathHelper.ToRadians(120);
-            theta = MathHelper.ToRadians(70);
+            theta = MathHelper.ToRadians(45);
 
 
             Target = center;
             ViewMatrix = Matrix.CreateLookAt(center + toSpherical(radius, phi, theta), Target, Vector3.Up);
-            Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver2, (float)3 / 4, 1, 500);
+            Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, (float)4 / 3, 1, 500);
             speed = 0.3f;
             
         }

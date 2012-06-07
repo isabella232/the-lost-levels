@@ -25,8 +25,8 @@ namespace TheLostLevels
         public float heightabove = 2;
         private TheLostLevelsGame TheLostLevelsGame;
        // PathFinder PlayerPathFinder;
-        public Player(TheLostLevelsGame g, Vector2 position,Level level)
-            : base(g)
+        public Player(TheLostLevelsGame g, Vector2 position,Level level) : base(g)
+     
         {
             Position = position;
             TheLostLevelsGame = g;
