@@ -49,7 +49,7 @@ namespace TheLostLevels
         }
         private void LoadLevelFile()
         {
-            TextReader reader  = new StreamReader(@"Attributes\level1.txt");
+            TextReader reader  = new StreamReader(@"Attributes\maze.txt");
             char[] delimiterChars = {' ','\t'};
             while (reader.Peek() != -1)
             {

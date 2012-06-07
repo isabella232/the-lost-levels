@@ -38,7 +38,7 @@
       <Time>2012-06-07T02:08:24.4403442-05:00</Time>
       <Dependency>
         <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\wolf_0.xml</Key>
-        <Value>2012-06-07T11:55:51.2415729-05:00</Value>
+        <Value>2012-06-07T13:23:44.8782076-05:00</Value>
       </Dependency>
       <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\wolftexture_0.xnb</Request>
     </Item>
@@ -52,7 +52,7 @@
       <Time>2012-06-07T02:08:30.3476821-05:00</Time>
       <Dependency>
         <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\guy_0.xml</Key>
-        <Value>2012-06-07T11:55:58.9960164-05:00</Value>
+        <Value>2012-06-07T13:23:54.4347542-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -65,7 +65,7 @@
       <Time>2012-06-07T02:08:27.3005078-05:00</Time>
       <Dependency>
         <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\tree_0.xml</Key>
-        <Value>2012-06-07T11:55:59.3450364-05:00</Value>
+        <Value>2012-06-07T13:23:54.9297825-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -78,7 +78,7 @@
       <Time>2012-06-07T02:08:35.0649519-05:00</Time>
       <Dependency>
         <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\enemy_0.xml</Key>
-        <Value>2012-06-07T11:56:06.2344304-05:00</Value>
+        <Value>2012-06-07T13:24:03.242258-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -91,7 +91,7 @@
       <Time>2012-06-07T02:08:22.566237-05:00</Time>
       <Dependency>
         <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\well_0.xml</Key>
-        <Value>2012-06-07T11:56:06.5314474-05:00</Value>
+        <Value>2012-06-07T13:24:03.6652822-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -104,7 +104,7 @@
       <Time>2012-06-07T02:08:26.9664887-05:00</Time>
       <Dependency>
         <Key>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\obj\x86\Debug\windmill_0.xml</Key>
-        <Value>2012-06-07T11:56:07.8265215-05:00</Value>
+        <Value>2012-06-07T13:24:05.5713912-05:00</Value>
       </Dependency>
       <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\w1_0.xnb</Request>
       <Request>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\cs_0.xnb</Request>
@@ -131,6 +131,15 @@
       <Options>None</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
       <Time>2012-06-07T02:08:27.2005021-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Shader Effects\Toon.fx</Source>
+      <Name>Shader Effects\Toon</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\Shader Effects\Toon.xnb</Output>
+      <Time>2012-06-07T11:57:07.7269476-05:00</Time>
     </Item>
     <Item>
       <Source>wolf.fbx</Source>
@@ -301,24 +310,6 @@
       <Options>None</Options>
       <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\w10_0.xnb</Output>
       <Time>2012-06-07T02:08:31.7027596-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Shader Effects\Toon.fx</Source>
-      <Name>Shader Effects\Toon</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\Shader Effects\Toon.xnb</Output>
-      <Time>2012-06-07T11:57:07.7269476-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Shader Effects\Toon.fx</Source>
-      <Name>Shader Effects\Toon</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Karthic\Documents\Visual Studio 2010\Projects\the-lost-levels\TheLostLevels\TheLostLevels\TheLostLevels\bin\x86\Debug\Content\Shader Effects\Toon.xnb</Output>
-      <Time>2012-06-07T02:03:19.7249155-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
