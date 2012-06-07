@@ -71,12 +71,13 @@ namespace TheLostLevels
             base.Initialize();
         }
 
-             
+        KeyboardState k_new;
+        KeyboardState k_old;
 
         public override void Update(GameTime gameTime)
         {
             MouseState st = Mouse.GetState();
-
+            k_new = Keyboard.GetState();
 
             //if (st.RightButton == ButtonState.Pressed)
             //{
@@ -100,20 +101,51 @@ namespace TheLostLevels
             //    Vector3 pointToGo = new Vector3(maxPointsource.X + t * dir.X, 0.0f, maxPointsource.Z + t * dir.Z);
             //    //TODO: Debug Pathfinder
             //    //int[,] matrix = new int[TileMap.MapWidth,TileMap.MapHeight];
-                
+
             //    //Microsoft.Xna.Framework.Point srcTile = TileMap.GetTileIndex(new Vector3(Position.X,0,Position.Y));
             //    //Microsoft.Xna.Framework.Point destTile = TileMap.GetTileIndex(pointToGo);
             //    //Point startTile = new Point((int)srcTile.X, (int)srcTile.Y, null);
             //    //Point endTile = new Point((int)destTile.X,(int)destTile.Y,null);
             //    //List<Point> pt = PathFinder.findPath(matrix, startTile, endTile);
             //    Microsoft.Xna.Framework.Point tileOnMap = TileMap.GetTileIndex(pointToGo);
-            //    Rectangle playerNextRectangle = Tile.GetSourceRectangle(new Vector2(tileOnMap.X,tileOnMap.Y));
+            //    Rectangle playerNextRectangle = Tile.GetSourceRectangle(new Vector2(tileOnMap.X, tileOnMap.Y));
 
             //    Microsoft.Xna.Framework.Point center = playerNextRectangle.Center;
-            //    Position = new Vector2(center.X,center.Y);
+            //    Position = new Vector2(center.X, center.Y);
             //    Guy.Position = new Vector3(Position.X, 0, Position.Y);
             //}
 
+             
+                    if (k_new.IsKeyDown(Keys.Down))
+                    {
+                        if (!k_old.IsKeyDown(Keys.Down))
+                        {
+                            Position = new Vector2(Position.X, Position.Y + Tile.TileWidth);
+                        }
+                    }
+                    if (k_new.IsKeyDown(Keys.Up))
+                    {
+                        if (!k_old.IsKeyDown(Keys.Up))
+                        {
+                            Position = new Vector2(Position.X, Position.Y - Tile.TileWidth);
+                        }
+                    }
+                    if (k_new.IsKeyDown(Keys.Left))
+                    {
+                        if (!k_old.IsKeyDown(Keys.Left))
+                        {
+                            Position = new Vector2(Position.X - Tile.TileWidth, Position.Y);
+                        }
+                    }
+                    if (k_new.IsKeyDown(Keys.Right))
+                    {
+                        if (!k_old.IsKeyDown(Keys.Right))
+                        {
+                            Position = new Vector2(Position.X + Tile.TileWidth, Position.Y);
+                        }
+                    }
+
+                    k_old = k_new;
             
             base.Update(gameTime);
         }

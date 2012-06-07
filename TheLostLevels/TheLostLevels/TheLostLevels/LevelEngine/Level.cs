@@ -108,18 +108,15 @@ namespace TheLostLevels
         }
 
         private double timeelapsed = 0;
+        
         public override void Update(GameTime gameTime)
         {
             Effects[(int)GameEffect.GROUND_PLANE].World = TheLostLevelsGame.gameCamera.ViewMatrix;
             MouseState st = Mouse.GetState();
 
+            
 
-
-
-
-
-
-
+            
 
             timeelapsed = timeelapsed + gameTime.ElapsedGameTime.TotalMilliseconds;
 
@@ -210,11 +207,13 @@ namespace TheLostLevels
 
                             if (openpos == true)
                             {
-                                amodel.Position = querypos;
+                                
                             }
                         }
                     }
                 }
+
+               
 
 
             }
