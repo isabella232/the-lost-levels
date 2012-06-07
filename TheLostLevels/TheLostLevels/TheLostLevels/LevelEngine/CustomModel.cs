@@ -81,7 +81,7 @@ namespace TheLostLevels
                 }
                 else if(ModelName == "well" || ModelName == "guy")
                 {
-                    diffuseColor = new Vector4(0.643f,0.164f,0.164f,0.0f);
+                    diffuseColor = new Vector4(0.164f,0.650f,0.800f,0.0f);
                 }
                 foreach (ModelMesh mesh in TheModel.Meshes)
                 {
