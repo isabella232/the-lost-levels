@@ -8,13 +8,16 @@ float4x4 View;
 // The projection transformation
 float4x4 Projection;
 
+//eye vector
+float3 cameraPosition;
+
 // The transpose of the inverse of the world transformation,
 // used for transforming the vertex's normal
 float4x4 WorldInverseTranspose;
 
 //--------------------------- DIFFUSE LIGHT PROPERTIES ------------------------------
 // The direction of the diffuse light
-float3 DiffuseLightDirection = float3(1, 0, 0);
+float3 DiffuseLightDirection = float3(-1, 0, 0);
 
 // The color of the diffuse light
 float4 DiffuseColorLight = float4(1, 1, 1, 1);
@@ -47,11 +50,13 @@ struct VertexToPixel
     float4 Position : POSITION0;
     float4 Color : COLOR0;
     float3 Normal : TEXCOORD1;
+	float3 CamView : TEXCOORD2;
+
 };
 
 float3 SpecularColor;
 float3 EmissiveColor;
-float4 DiffuseColor;
+float4 DiffuseColor = float4(1,1,1,1);
 
 
 
@@ -72,8 +77,9 @@ VertexToPixel CelVertexShader(AppToVertex input)
     output.Normal = normalize(mul(input.Normal, WorldInverseTranspose));
 
     // Copy over the texture coordinate
-    output.Color = float4(1,1,1,1);
-
+    output.Color = DiffuseColor;
+	output.CamView =cameraPosition - mul(input.Position,World);
+	//output.DiffuseColor = DiffuseColor;
     return output;
 }
 
@@ -83,12 +89,11 @@ VertexToPixel CelVertexShader(AppToVertex input)
 float4 CelPixelShader(VertexToPixel input) : COLOR0
 {
     // Calculate diffuse light amount
-    float intensity = dot(normalize(DiffuseLightDirection), input.Normal);
-    if(intensity < 0)
-        intensity = 0;
+    float intensity = saturate(dot(normalize(DiffuseLightDirection), input.Normal));
+    
 
     // Calculate what would normally be the final color, including texturing and diffuse lighting
-    float4 color =input.Color + DiffuseColorLight * DiffuseIntensity * DiffuseColor;
+    float4 color =DiffuseColorLight * DiffuseIntensity * DiffuseColor;
     color.a = 1;
 
     // Discretize the intensity, based on a few cutoff points
@@ -100,8 +105,8 @@ float4 CelPixelShader(VertexToPixel input) : COLOR0
         color = float4(0.35,0.35,0.35,1.0) * color;
     else
         color = float4(0.1,0.1,0.1,1.0) * color;
-
-	//color = input.Color;
+	
+	
     return color;
 }
 
