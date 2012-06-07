@@ -38,7 +38,7 @@ namespace TheLostLevels
 
         public Vector3 Position { get; set; }
 
-        public void Draw(GameTime gameTime, GraphicsDevice graphics,Camera cam, Effect celEffect)
+        public void Draw(GameTime gameTime, GraphicsDevice graphics,Camera cam, Effect celEffect,Vector4 diffuseColor)
         {
             if (celEffect==null)
             {
@@ -83,7 +83,7 @@ namespace TheLostLevels
                     {
                         
                         Vector3 x = part.Effect.Parameters["SpecularColor"].GetValueVector3();
-     //                   Vector3 y = new Vector3((float)RandomNumber(0, 100) / 100, (float)RandomNumber(0, 100) / 100, (float)RandomNumber(0, 100) / 100);                   
+                       
                         Vector3 y = part.Effect.Parameters["EmissiveColor"].GetValueVector3();
                         Vector4 z = part.Effect.Parameters["DiffuseColor"].GetValueVector4();
                         part.Effect = celEffect;
@@ -97,7 +97,7 @@ namespace TheLostLevels
                         celEffect.Parameters["WorldInverseTranspose"].SetValue((Matrix.Invert(worldT)));
                         celEffect.Parameters["View"].SetValue(cam.ViewMatrix);
                         celEffect.Parameters["Projection"].SetValue(cam.Projection);
-                        //celEffect.Parameters["DiffuseColor"].SetValue(z);
+                        celEffect.Parameters["DiffuseColor"].SetValue(diffuseColor);
                         celEffect.Parameters["EmissiveColor"].SetValue(y);
                         celEffect.Parameters["SpecularColor"].SetValue(x);
                         celEffect.Parameters["cameraPosition"].SetValue(cam.GetPosition());

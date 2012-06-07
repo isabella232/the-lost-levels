@@ -110,7 +110,8 @@
     <Compile Include="LevelEngine\Quad.cs" />
     <Compile Include="LevelEngine\Tile.cs" />
     <Compile Include="LevelEngine\TileMap.cs" />
-
+    <Compile Include="ScreenManager.cs" />
+    <Compile Include="StartScreen.cs" />
     <Compile Include="TheLostLevels.cs" />
   </ItemGroup>
   <ItemGroup>

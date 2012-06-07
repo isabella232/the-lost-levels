@@ -39,7 +39,7 @@ namespace TheLostLevels
 
         public void Draw(GameTime gameTime,GraphicsDevice graphics,Camera gameCamera)
         {
-            Guy.Draw(gameTime, graphics, gameCamera,TheLostLevelsGame.celShader);
+            Guy.Draw(gameTime, graphics, gameCamera,TheLostLevelsGame.celShader,new Vector4(1,0,0,0));
 
             base.Draw(gameTime);
         }
